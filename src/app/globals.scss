@@ -4,8 +4,11 @@
 
 :root {
   --main-background: #0A0A0C;
-  --background: #1E1E1E;
   --foreground: #E6E6E6;
+  --lighter-black: #121213;
+  --lightest-black: #1E1E1E;
+  --grey: #7A7A7B;
+  --light-purple: #844AEA;
 }
 
 body {
@@ -36,3 +39,13 @@ body {
   }
 }
 
+.footer-credits {
+  color: var(--grey);
+  font-weight: 800;
+
+  a {
+    &:hover {
+      color:  var(--light-purple); 
+    }
+  }
+}
