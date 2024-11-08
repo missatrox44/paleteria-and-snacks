@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="wrapper flex flex-col items-center gap-y-3">
-      <div className="flex gap-x-4 items-center">
+      <div className="flex gap-x-4 items-center pt-4 md:pt-8">
         <Image src="/logo.png" alt="KD's Paleteria Logo" width={32} height={32} />
         <p className="font-acme">KD's Paleteria & Snacks</p>
       </div>
@@ -21,7 +21,7 @@ const Footer = () => {
           <Image src="/icons/twitter2.svg" alt="Twitter Icon" width={32} height={32} />
         </Link>
       </div>
-      <div className="footer-credits"> © {currentYear} | KD's Paleteria & Snacks | <Link target="_blank" href="https://www.sarabaqla.dev/">S4R4</Link></div>
+      <div className="footer-credits pb-4 md:pb-8"> © {currentYear} | KD's Paleteria & Snacks | <Link target="_blank" href="https://www.sarabaqla.dev/">S4R4</Link></div>
     </footer>
   );
 };
