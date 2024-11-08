@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
+  --main-background: #0A0A0C;
   --background: #1E1E1E;
   --foreground: #E6E6E6;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--main-background);
 }
 
 .font-acme {
