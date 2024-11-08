@@ -3,8 +3,10 @@ export default function Home() {
   return (
    <div>
 
-<Toggle/>
-
-   </div>
+    <Toggle/>
+    <h1 className="font-pacifico text-4xl">Pacifico</h1>
+      <p className="font-acme text-2xl">Acme</p>
+      <p className="font-afacad text-2xl">Afacad</p>
+    </div>
   );
 }
