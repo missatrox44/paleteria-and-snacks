@@ -11,8 +11,8 @@ const Toggle = () => {
         onClick={() => setIsEnglish(!isEnglish)}
         className={`relative w-12 h-6 rounded-full transition-colors duration-300 ease-in-out focus:outline-none ${
           isEnglish
-            ? "bg-gradient-to-r from-[#844AEA] via-[#5C6ADA] to-[#388DD5]"
-            : "bg-gradient-to-r from-[#FF7F3F] via-[#FF9A3C] to-[#FFB547]"
+            ? "bg-gradient-to-r from-[#FF7F3F] via-[#FF9A3C] to-[#FFB547]"
+            : "bg-gradient-to-r from-[#844AEA] via-[#5C6ADA] to-[#388DD5]"
         }`}
       >
         <span
