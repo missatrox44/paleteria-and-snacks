@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
+import { Footer } from "./components";
 
 const acme = localFont({
   src: "./fonts/Acme-Regular.ttf",
@@ -33,6 +34,7 @@ export default function RootLayout({
         className={`${acme.variable} ${pacifico.variable} ${afacad.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
