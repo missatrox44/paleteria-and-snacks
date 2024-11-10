@@ -22,10 +22,10 @@ const DesktopNavBar = () => {
   return (
     <nav
       className={`hidden sm:block fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/30 backdrop-blur-md" : "bg-transparent"
+        scrolled ? "bg-black/30 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="flex wrapper justify-between py-8 items-center">
+      <div className="flex wrapper justify-between py-7 items-center">
         <div className="flex gap-x-6 items-center">
           <Image src="/logo.png" alt="KD's Paleteria Logo" width={48} height={48} />
           <ul className="flex gap-x-6">

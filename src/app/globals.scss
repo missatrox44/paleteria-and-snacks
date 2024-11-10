@@ -4,7 +4,7 @@
 
 :root {
   --main-background: #0A0A0C;
-  --foreground: #E6E6E6;
+  --white: #E6E6E6;
   --lighter-black: #121213;
   --lightest-black: #1E1E1E;
   --grey: #7A7A7B;
@@ -12,7 +12,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: var(--white);
   background: var(--main-background);
   font-family: var(--font-afacad), sans-serif;
 }
@@ -59,9 +59,13 @@ body {
 
 .social-icon {
   img {
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 1px;
     &:hover {
-      border: 1px solid var(--light-purple); 
-      border-radius: 99px;
+      background-color: var(--light-purple);
+      transform: scale(1.1);
     }
   }
 }
