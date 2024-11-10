@@ -1,4 +1,4 @@
-import { Hero, MenuIcons,LocationHours } from "@/app/components";
+import { Hero, MenuIcons,LocationHours, FollowSocial } from "@/app/components";
 export default function Home() {
   return (
    <div>
@@ -8,7 +8,7 @@ export default function Home() {
     {/* Pocpsicles */}
     {/* Snacks */}
     {/* Drinks */}  
-    {/* Follow The Flavor */}
+    <FollowSocial />
     <LocationHours />
     
     {/* <h1 className="font-pacifico text-6xl">Pacifico</h1>
