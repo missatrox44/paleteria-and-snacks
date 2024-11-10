@@ -5,3 +5,8 @@ Button
           Follow
     </button>
 ```
+
+
+
+        {/* Background effect */}
+        {/* <div className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 opacity-10 rounded-lg -top-4 -left-4 blur-lg transform scale-105"></div> */}
