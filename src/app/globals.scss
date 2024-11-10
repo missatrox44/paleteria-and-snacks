@@ -29,6 +29,18 @@ body {
   font-family: var(--font-afacad), sans-serif;
 }
 
+.kd-purple {
+  color: var(--light-purple);
+}
+
+.kd-grey {
+  color: var(--grey);
+}
+
+.kd-white {
+  color: var(--white);
+}
+
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
@@ -41,6 +53,13 @@ body {
   }
 }
 
+.body-copy {
+  font-size: .875rem;
+
+  @screen md {
+    font-size: 1rem;
+  }
+}
 // Menu Icons Styles
 .menu-icon {
   transition: transform 0.3s;
@@ -70,6 +89,11 @@ body {
   }
 }
 
+.hover-link {
+    &:hover {
+      color:  var(--light-purple); 
+    }
+}
 
 // Footer Styles
 .footer-credits {
