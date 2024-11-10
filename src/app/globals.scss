@@ -9,6 +9,10 @@
   --lightest-black: #1E1E1E;
   --grey: #7A7A7B;
   --light-purple: #844AEA;
+  --neon-pink: '#FF00F5',
+  --neon-turquoise: '#00FFE0',
+  --neon-orange: '#FF9100',
+  --neon-green: '#76FF03',
 }
 
 body {
@@ -39,6 +43,22 @@ body {
 
 .kd-white {
   color: var(--white);
+}
+
+.kd-neon-pink {
+  color: var(--neon-pink);
+}
+
+.kd-neon-turquoise {
+  color: var(--neon-turquoise);
+}
+
+.kd-neon-orange {
+  color: var(--neon-orange);
+}
+
+.kd-neon-green {
+  color: var(--neon-green);
 }
 
 .wrapper {
