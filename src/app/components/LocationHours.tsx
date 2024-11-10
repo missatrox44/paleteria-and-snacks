@@ -3,7 +3,12 @@ import Link from "next/link";
 
 const LocationHours = () => {
   return (
-    <section className="wrapper grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
+    <section className="relative">
+         <div className="absolute right-0 top-0 z-0 opacity-40">
+        <Image src="/bg-icons/pancake.svg" alt="Pancake icon" width={350} height={350} />
+      </div>
+    <div className="wrapper grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
+     
       <div className="col-span-2 md:col-span-4 flex justify-center">
         <h2 className="font-pacifico text-4xl md:text-6xl">Hours & Location</h2>
       </div>
@@ -43,6 +48,7 @@ const LocationHours = () => {
           </div>
         </div>
       </div>
+    </div>
     </section>
   );
 };
