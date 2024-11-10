@@ -1,14 +1,33 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Toggle from "./Toggle";
+
 const DesktopNavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    // TODO: make nav sticky and blurry with opacity bg
-    <nav className="absolute top-0 left-0 w-full z-50">
+    <nav
+      className={`hidden sm:block fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white/30 backdrop-blur-md" : "bg-transparent"
+      }`}
+    >
       <div className="flex wrapper justify-between py-8 items-center">
         <div className="flex gap-x-6 items-center">
-          <Image src="/logo.png" alt="KD&apos;s Paleteria Logo" width={48} height={48} />
+          <Image src="/logo.png" alt="KD's Paleteria Logo" width={48} height={48} />
           <ul className="flex gap-x-6">
             <li><Link href="#ice-cream">Ice Cream</Link></li>
             <li><Link href="#popsicles">Popsicles</Link></li>
@@ -18,12 +37,8 @@ const DesktopNavBar = () => {
         </div>
         <Toggle />
       </div>
-     
     </nav>
   );
 };
 
 export default DesktopNavBar;
-
-
-

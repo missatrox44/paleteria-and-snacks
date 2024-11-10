@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         <DesktopNavBar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

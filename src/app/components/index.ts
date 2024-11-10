@@ -1,3 +1,4 @@
 export { default as Toggle } from "./Toggle";
 export { default as Footer } from "./Footer";
 export { default as DesktopNavBar } from "./DesktopNavBar";
+export { default as Hero } from "./Hero";
