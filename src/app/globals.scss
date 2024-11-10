@@ -54,6 +54,23 @@ body {
   }
 }
 
+//Responsive map
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 // Footer Styles
 .footer-credits {
   color: var(--grey);
