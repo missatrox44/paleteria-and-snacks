@@ -30,6 +30,16 @@ const FollowSocial = () => {
           Follow
         </button>
 
+        <div className="social-icon">
+          <Link target="_blank" href="https://www.facebook.com/profile.php?id=61566820604254">
+            <Image src="/icons/facebook-gradient.svg" alt="Facebook icon" width={64} height={64} />
+          </Link>
+        </div>
+        <div className="social-icon">
+          <Link target="_blank" href="https://www.instagram.com/kdspaleteria/">
+            <Image src="/icons/instagram-gradient2.svg" alt="Instagram icon" width={64} height={64} />
+          </Link>
+        </div>
 
 
       </div>

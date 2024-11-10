@@ -11,10 +11,10 @@ const Footer = () => {
         <p className="font-acme text-lg">KD&apos;s Paleteria & Snacks</p>
       </div>
       <div className="flex gap-x-4 items-center">
-        <Link target="_blank" className="social-icon" href="https://www.facebook.com/profile.php?id=61566820604254">
+        <Link target="_blank" className="social-icon-footer" href="https://www.facebook.com/profile.php?id=61566820604254">
           <Image src="/icons/facebook.svg" alt="Facebook Icon" width={32} height={32} />
         </Link>
-        <Link target="_blank" className="social-icon" href="https://www.instagram.com/kdspaleteria/">
+        <Link target="_blank" className="social-icon-footer" href="https://www.instagram.com/kdspaleteria/">
           <Image src="/icons/instagram.svg" alt="Instagram Icon" width={32} height={32} />
         </Link>
       </div>
