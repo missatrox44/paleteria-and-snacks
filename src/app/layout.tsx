@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
-import { Footer } from "./components";
+import { Footer, DesktopNavBar } from "./components";
 
 const acme = localFont({
   src: "./fonts/Acme-Regular.ttf",
@@ -33,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${acme.variable} ${pacifico.variable} ${afacad.variable} antialiased`}
       >
+        <DesktopNavBar />
         {children}
         <Footer />
       </body>
