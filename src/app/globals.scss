@@ -41,6 +41,20 @@ body {
   }
 }
 
+// Menu Icons Styles
+.menu-icon {
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+
+    p {
+      color: var(--light-purple);
+    }
+  }
+}
+
+// Footer Styles
 .footer-credits {
   color: var(--grey);
   font-weight: 800;
