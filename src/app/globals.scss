@@ -32,10 +32,12 @@ body {
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 1rem; 
+  padding-left: 1rem; 
+  padding-right: 1rem; 
 
   @screen md {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
