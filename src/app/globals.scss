@@ -44,9 +44,22 @@ body {
   font-weight: 800;
   font-size: 0.8rem;
 
+  @screen md {
+    font-size: 1rem;
+  }
+
   a {
     &:hover {
       color:  var(--light-purple); 
+    }
+  }
+}
+
+.social-icon {
+  img {
+    &:hover {
+      border: 1px solid var(--light-purple); 
+      border-radius: 99px;
     }
   }
 }
