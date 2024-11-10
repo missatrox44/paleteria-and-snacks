@@ -1,4 +1,4 @@
-import { Hero, MenuIcons,LocationHours, FollowSocial } from "@/app/components";
+import { Hero, MenuIcons,LocationHours, FollowSocial, FoodCategory } from "@/app/components";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
     <Hero />
     <MenuIcons />
     {/* IceCream */}
+    <FoodCategory />
     {/* Pocpsicles */}
     {/* Snacks */}
     {/* Drinks */}  

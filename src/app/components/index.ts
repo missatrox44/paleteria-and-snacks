@@ -6,3 +6,4 @@ export { default as MenuIcons } from "./MenuIcons";
 export { default as LocationHours } from "./LocationHours";
 export { default as FollowSocial } from "./FollowSocial";
 // export { default as InstagramEmbed } from "./InstagramEmbed";
+export { default as FoodCategory } from "./FoodCategory";
