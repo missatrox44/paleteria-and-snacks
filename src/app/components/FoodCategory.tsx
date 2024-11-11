@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { FoodItem } from "../types/food";
 
 interface FoodCategoryProps {
-  id : string;
+  id: string;
   neonBar: string;
   imgSrc: string;
   categoryTitle: string;
@@ -23,7 +23,7 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
 
   return (
     <section id={id} className="wrapper py-10 relative">
-       <div className="absolute -left-7 top-0 h-full w-10">
+      <div className="absolute -left-8 top-0 w-10 h-full">
         <Image
           src={neonBar}
           alt="neon bar"
@@ -31,6 +31,7 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
           objectFit="cover"
         />
       </div>
+
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
           <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
