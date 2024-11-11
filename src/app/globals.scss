@@ -140,6 +140,63 @@ body {
   z-index: -1;
 }
 
+.turquoise-neon-glow {
+  position: relative;
+  color: #00FFE0;
+  text-shadow: 0 0 2px #00FFE0, 0 0 5px rgba(0, 255, 224, 0.5);
+}
+
+.turquoise-neon-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 224, 0.2);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.orange-neon-glow {
+  position: relative;
+  color: #FF9100;
+  text-shadow: 0 0 2px #FF9100, 0 0 5px rgba(255, 145, 0, 0.5);
+}
+
+.orange-neon-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 145, 0, 0.2);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.green-neon-glow {
+  position: relative;
+  color: #76FF03;
+  text-shadow: 0 0 2px #76FF03, 0 0 5px rgba(118, 255, 3, 0.5);
+}
+
+.green-neon-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(118, 255, 3, 0.2);
+  filter: blur(10px);
+  z-index: -1;
+}
+
 
 .social-icon {
   transition: transform 0.3s;

@@ -1,6 +1,5 @@
 
 import Image from "next/image";
-
 import classNames from "classnames";
 import { FoodItem } from "../types/food";
 
@@ -12,7 +11,7 @@ interface FoodCategoryProps {
   classes?: string;
 }
 const FoodCategory: React.FC<FoodCategoryProps> = ({
-  imgSrc,
+  imgSrc = "",
   categoryTitle,
   categoryDescription,
   foodItems,
@@ -22,7 +21,7 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
     <section className="wrapper py-10">
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
-        <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
+          <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
 
           <h2 className={classNames("font-acme text-2xl md:text-4xl", classes)}>{categoryTitle}</h2>
         </div>
