@@ -107,65 +107,258 @@
 //   ]
 // }
 
-export const foodData = [
-    {
-      "name": "Cup",
-      "category": "ice-cream",
-      "image": "/temp/ice-cream/cup.png",
-      "price": null,
-      "variations" : [
-        { "name": "1 scoop", "price": 3.75 },
-        { "name": "2 scoops", "price": 4.75 },
-        { "name": "3 scoops", "price": 5.75 }
-      ],
-      featured: false
-    },
-    {
-      "name": "Cone",
-      "category": "ice-cream",
-      "image": "/temp/ice-cream/cone.png",
-      "price": null,
-      "variations" : [
-        { "name": "1 scoop", "price": 4.75 },
-        { "name": "2 scoops", "price": 5.75 },
-        { "name": "3 scoops", "price": 6.75 }
-      ],
-      featured: false
-    },
-    {
-      "name": "Waffle Bowl",
-      "category": "ice-cream",
-      "image": "/temp/ice-cream/waffle-bowl.png",
-      "price": null,
-      "variations" : [
-        { "name": "1 scoop", "price": 5.75 },
-        { "name": "2 scoops", "price": 6.75 },
-        { "name": "3 scoops", "price": 7.75 }
-      ],
-      featured: true
-    },
-    {
-      "name": "Cream Base",
-      "category": "popsicles",
-      "image": "/temp/popsicles/cream.png",
-      "price": 3.99,
-      "variations" : [],
-      featured: false
-    },
-    {
-      "name": "Water Based",
-      "category": "popsicles",
-      "image": "/temp/popsicles/water.png",
-      "price": 2.99,
-      "variations" : [],
-      featured: false
-    },
-    {
-      "name": "Dipped in Chocolate",
-      "category": "popsicles",
-      "image": "/temp/popsicles/chocolate.png",
-      "price": 7.75,
-      "variations" : [],
-      featured: true
-    },
-  ];
+// export const foodData = [
+//     {
+//       "name": "Cup",
+//       "category": "ice-cream",
+//       "image": "/temp/ice-cream/cup.png",
+//       "price": null,
+//       "variations" : [
+//         { "name": "1 scoop", "price": 3.75 },
+//         { "name": "2 scoops", "price": 4.75 },
+//         { "name": "3 scoops", "price": 5.75 }
+//       ],
+//       featured: false
+//     },
+//     {
+//       "name": "Cone",
+//       "category": "ice-cream",
+//       "image": "/temp/ice-cream/cone.png",
+//       "price": null,
+//       "variations" : [
+//         { "name": "1 scoop", "price": 4.75 },
+//         { "name": "2 scoops", "price": 5.75 },
+//         { "name": "3 scoops", "price": 6.75 }
+//       ],
+//       featured: false
+//     },
+//     {
+//       "name": "Waffle Bowl",
+//       "category": "ice-cream",
+//       "image": "/temp/ice-cream/waffle-bowl.png",
+//       "price": null,
+//       "variations" : [
+//         { "name": "1 scoop", "price": 5.75 },
+//         { "name": "2 scoops", "price": 6.75 },
+//         { "name": "3 scoops", "price": 7.75 }
+//       ],
+//       featured: true
+//     },
+//     {
+//       "name": "Cream Base",
+//       "category": "popsicles",
+//       "image": "/temp/popsicles/cream.png",
+//       "price": 3.99,
+//       "variations" : [],
+//       featured: false
+//     },
+//     {
+//       "name": "Water Based",
+//       "category": "popsicles",
+//       "image": "/temp/popsicles/water.png",
+//       "price": 2.99,
+//       "variations" : [],
+//       featured: false
+//     },
+//     {
+//       "name": "Dipped in Chocolate",
+//       "category": "popsicles",
+//       "image": "/temp/popsicles/chocolate.png",
+//       "price": 7.75,
+//       "variations" : [],
+//       featured: true
+//     },
+//   ];
+
+export const iceCream = [
+  {
+    "name": "Cup",
+    "image": "/temp/ice-cream/cup.png",
+    "price": null,
+    "variations": [
+      { "name": "1 scoop", "price": 3.75 },
+      { "name": "2 scoops", "price": 4.75 },
+      { "name": "3 scoops", "price": 5.75 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Cone",
+    "image": "/temp/ice-cream/cone.png",
+    "price": null,
+    "variations": [
+      { "name": "1 scoop", "price": 4.75 },
+      { "name": "2 scoops", "price": 5.75 },
+      { "name": "3 scoops", "price": 6.75 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Waffle Bowl",
+    "image": "/temp/ice-cream/waffle-bowl.png",
+    "price": null,
+    "variations": [
+      { "name": "1 scoop", "price": 5.75 },
+      { "name": "2 scoops", "price": 6.75 },
+      { "name": "3 scoops", "price": 7.75 }
+    ],
+    "featured": true
+  },
+];
+
+export const popsicles = [
+  {
+    "name": "Cream Base",
+    "image": "/temp/popsicles/cream.png",
+    "price": 3.99,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Water Based",
+    "image": "/temp/popsicles/water.png",
+    "price": 2.99,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Dipped in Chocolate",
+    "image": "/temp/popsicles/chocolate.png",
+    "price": 7.75,
+    "variations": [],
+    "featured": true
+  }
+];
+
+export const snacks = [
+  {
+    "name": "Mini Pancakes",
+    "image": "/temp/snacks/minipancakes.png",
+    "price": null,
+    "variations": [
+      { "name": "With fruit", "price": 9.99 },
+      { "name": "With ice cream", "price": 12.50 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Corn in a cup",
+    "image": "/temp/snacks/elote.png",
+    "price": null,
+    "variations": [
+      { "name": "Medium", "price": 7.50 },
+      { "name": "Large", "price": 8.99 },
+      { "name": "Elote Entero", "price": 5.99 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Strawberries and cream",
+    "image": "/temp/snacks/strawberriesncream.png",
+    "price": 7.50,
+    "variations": [],
+    "featured": true
+  },
+  {
+    "name": "Boxed strawberries",
+    "image": "/temp/snacks/boxed-strawberries.png",
+    "price":5.75,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Fruit and cream",
+    "image": "/temp/snacks/strawberriesncream.png",
+    "price":7.25,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Fruit Cup",
+    "image": "/temp/snacks/fruit_cup.png",
+    "price": 6.50,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Dorinachos",
+    "image": "/temp/snacks/dorinachos.png",
+    "price": null,
+    "variations": [
+      { "name": "Md cheese only", "price": 4.99 },
+      { "name": "Md cheese & corn", "price": 5.99 },
+      { "name": "Lg cheese only", "price": 5.99 },
+      { "name": "Lg cheese & corn", "price": 7.99 }
+    ],
+    "featured": true
+  },
+  {
+    "name": "Pepihuates",
+    "image": "/temp/snacks/pepihuates.png",
+    "price": 6.50,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Popcorn",
+    "image": "/temp/snacks/popcorn.png",
+    "price": 2.99,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Maruchan",
+    "image": "/temp/snacks/maruchan.png",
+    "price": null,
+    "variations": [
+      { "name": "Sencilla", "price": 3.99 },
+      { "name": "Chorreada", "price": 8.99 }
+    ],
+    "featured": true
+  },
+  {
+    "name": "Papas Locas",
+    "image": "/temp/snacks/papas_locas.png",
+    "price": null,
+    "variations": [
+      { "name": "Sencillas", "price": 4.99 },
+      { "name": "Preparadas", "price": 7.99 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Chilindrina",
+    "image": "/temp/snacks/chilidrina.png",
+    "price": 6.99,
+    "variations": [],
+    "featured": true
+  },
+  {
+    "name": "Hot Cheetos with Cheese",
+    "image": "/temp/snacks/hot_cheetos_cheese.png",
+    "price": 4.99,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Chicharrines",
+    "image": "/temp/snacks/chicharrines.png",
+    "price": 3.99,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Cotton Candy",
+    "image": "/temp/snacks/cotton_candy.png",
+    "price": 3.99,
+    "variations": [],
+    "featured": false
+  },
+  {
+    "name": "Banana Split",
+    "image": "/temp/snacks/banana_split.png",
+    "price": 7.75,
+    "variations": [],
+    "featured": true
+  }
+];
