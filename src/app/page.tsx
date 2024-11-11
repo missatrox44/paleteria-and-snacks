@@ -1,12 +1,19 @@
 import { Hero, MenuIcons,LocationHours, FollowSocial, FoodCategory } from "@/app/components";
 import Image from "next/image";
+import { iceCreamData } from "./data/foodData";
 export default function Home() {
   return (
    <div>
     <Hero />
     <MenuIcons />
     {/* IceCream */}
-    <FoodCategory />
+    <FoodCategory
+      imgSrc="/icons/ice-cream.svg"
+      categoryTitle="Ice Cream"
+      categoryDescription="This is the description of the ice cream at the store."
+      foodItems={iceCreamData}
+      classes="text-neon-pink pink-neon-glow"
+    />
     {/* Pocpsicles */}
     {/* Snacks */}
     {/* Drinks */}  

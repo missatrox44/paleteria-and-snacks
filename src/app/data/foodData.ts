@@ -2,6 +2,7 @@ export const iceCreamData = [
   {
     "name": "Cup",
     "image": "/temp/ice-cream/cup.png",
+    "alt": "Ice Cream cup",
     "price": null,
     "variations": [
       { "name": "1 scoop", "price": 3.75 },
@@ -13,6 +14,7 @@ export const iceCreamData = [
   {
     "name": "Cone",
     "image": "/temp/ice-cream/cone.png",
+    "alt": "Ice Cream cone",
     "price": null,
     "variations": [
       { "name": "1 scoop", "price": 4.75 },
@@ -24,6 +26,7 @@ export const iceCreamData = [
   {
     "name": "Waffle Bowl",
     "image": "/temp/ice-cream/waffle-bowl.png",
+    "alt": "Ice Cream waffle bowl",
     "price": null,
     "variations": [
       { "name": "1 scoop", "price": 5.75 },
@@ -38,6 +41,7 @@ export const popsiclesData = [
   {
     "name": "Cream Base",
     "image": "/temp/popsicles/cream.png",
+    "alt": "Cream popsicle",
     "price": 3.99,
     "variations": [],
     "featured": false
@@ -45,6 +49,7 @@ export const popsiclesData = [
   {
     "name": "Water Based",
     "image": "/temp/popsicles/water.png",
+    "alt": "Water popsicle",
     "price": 2.99,
     "variations": [],
     "featured": false
@@ -52,6 +57,7 @@ export const popsiclesData = [
   {
     "name": "Dipped in Chocolate",
     "image": "/temp/popsicles/chocolate.png",
+    "alt": "Chocolate popsicle",
     "price": 7.75,
     "variations": [],
     "featured": true
@@ -62,6 +68,7 @@ export const snacksData = [
   {
     "name": "Mini Pancakes",
     "image": "/temp/snacks/minipancakes.png",
+    "alt": "Mini pancakes",
     "price": null,
     "variations": [
       { "name": "With fruit", "price": 9.99 },
