@@ -7,9 +7,9 @@ const FoodCategory = () => {
 
   return (
     <section className="wrapper py-10">
-      <div className="flex flex-col">
+      <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
-          <Image src="/icons/drinks.svg" alt="Drinks icon" width={32} height={32} /> 
+          <Image src="/icons/ice-cream.svg" alt="Ice Cream icon" width={50} height={50} /> 
           <h2 className="font-acme text-2xl md:text-4xl text-neon-pink pink-neon-glow">Ice Cream</h2>
           {/* <Image className="object-fit" src="/text/ice-cream-text.svg" alt="Ice Cream" width={1000} height={1000} />  */}
         </div>
