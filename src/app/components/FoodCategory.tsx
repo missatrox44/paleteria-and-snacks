@@ -5,6 +5,7 @@ import { FoodItem } from "../types/food";
 
 interface FoodCategoryProps {
   id : string;
+  neonBar: string;
   imgSrc: string;
   categoryTitle: string;
   categoryDescription: string;
@@ -13,6 +14,7 @@ interface FoodCategoryProps {
 }
 const FoodCategory: React.FC<FoodCategoryProps> = ({
   id = "",
+  neonBar = "",
   imgSrc = "",
   categoryTitle,
   categoryDescription,
@@ -20,7 +22,15 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
   classes = "" }) => {
 
   return (
-    <section id={id} className="wrapper py-10">
+    <section id={id} className="wrapper py-10 relative">
+       <div className="absolute -left-7 top-0 h-full w-10">
+        <Image
+          src={neonBar}
+          alt="neon bar"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
           <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
@@ -38,7 +48,7 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
           >
             <div className="flex flex-col gap-y-6 items-center">
               <Image src={item.image} alt={item.name} width={150} height={150} />
-              <p className="font-acme text-2xl">{item.name}</p>
+              <p className="font-acme text-2xl text-center">{item.name}</p>
             </div>
           </div>
         ))}

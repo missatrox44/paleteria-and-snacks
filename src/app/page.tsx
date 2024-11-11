@@ -9,6 +9,7 @@ export default function Home() {
       {/* IceCream */}
       <FoodCategory
         id="ice-cream"
+        neonBar="/neon-bars/pink-neon-vertical.svg"
         imgSrc="/icons/ice-cream.svg"
         categoryTitle="Ice Cream"
         categoryDescription="This is the description of the ice cream at the store."
@@ -18,6 +19,7 @@ export default function Home() {
       {/* Pocpsicles */}
       <FoodCategory
         id="popsicles"
+        neonBar="/neon-bars/turquoise-neon-vertical.svg"
         imgSrc="/icons/popsicle.svg"
         categoryTitle="Popsicles"
         categoryDescription="This is the description of the popsicles at the store."
@@ -27,6 +29,7 @@ export default function Home() {
       {/* Snacks */}
       <FoodCategory
         id="snacks"
+        neonBar="/neon-bars/orange-neon-vertical.svg"
         imgSrc="/icons/snack.svg"
         categoryTitle="Snacks"
         categoryDescription="This is the description of the snacks at the store."
@@ -36,6 +39,7 @@ export default function Home() {
       {/* Drinks */}
       <FoodCategory
         id="drinks"
+        neonBar="/neon-bars/green-neon-vertical.svg"
         imgSrc="/icons/drinks.svg"
         categoryTitle="Drinks"
         categoryDescription="This is the description of the drinks at the store."
