@@ -10,32 +10,26 @@ const FoodCategory = () => {
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
           <Image src="/icons/ice-cream.svg" alt="Ice Cream icon" width={50} height={50} /> 
-          <h2 className="font-acme text-2xl md:text-4xl text-neon-pink pink-neon-glow">Ice Cream!</h2>
+          <h2 className="font-acme text-2xl md:text-4xl text-neon-pink pink-neon-glow">Ice Cream</h2>
           {/* <Image className="object-fit" src="/text/ice-cream-text.svg" alt="Ice Cream" width={1000} height={1000} />  */}
         </div>
         <p className="text-xl">This is the description of the ice cream at the store.</p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-      <div className="border border-blue-400">
-          CARD
-        </div>
-   
-      <div className="border border-blue-400">
-          CARD
-        </div>
-      <div className="border border-blue-400">
-          CARD
-        </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-14">
+
         <div className="border border-blue-400">
           CARD
         </div>
+
         <div className="border border-blue-400">
           CARD
         </div>
+        
         <div className="border border-blue-400">
           CARD
         </div>
+
       </div>
     </section>
   );
