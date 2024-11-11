@@ -262,14 +262,14 @@ export const snacks = [
   {
     "name": "Boxed strawberries",
     "image": "/temp/snacks/boxed-strawberries.png",
-    "price":5.75,
+    "price": 5.75,
     "variations": [],
     "featured": false
   },
   {
     "name": "Fruit and cream",
     "image": "/temp/snacks/strawberriesncream.png",
-    "price":7.25,
+    "price": 7.25,
     "variations": [],
     "featured": false
   },
@@ -362,3 +362,75 @@ export const snacks = [
     "featured": true
   }
 ];
+
+export const drinks = [
+  {
+    "name": "Aguas Frescas",
+    "image": "/temp/drinks/agua-fresca.png",
+    "price": null,
+    "variations": [
+      { "name": "Medium", "price": 4.99 },
+      { "name": "Large", "price": 5.99 }
+    ],
+    "featured": true
+  },
+  {
+    "name": "Mineral Water",
+    "image": "/temp/drinks/mineral_water.png",
+    "price": null,
+    "variations": [
+      { "name": "Medium", "price": 4.99 },
+      { "name": "Large", "price": 5.99 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Mineral Water with Fruit",
+    "image": "/temp/drinks/mineralfruit.png",
+    "price": null,
+    "variations": [
+      { "name": "Medium", "price": 5.99 },
+      { "name": "Large", "price": 6.99 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Clamato",
+    "image": "/temp/drinks/clamato.png",
+    "price": null,
+    "variations": [
+      { "name": "Special", "price": 8.99 },
+      { "name": "Preparado", "price": 12.99 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Mango Smoothie",
+    "image": "/temp/drinks/mineral_water.png",
+    "price": null,
+    "variations": [
+      { "name": "Medium", "price": 4.99 },
+      { "name": "Large", "price": 6.99 }
+    ],
+    "featured": true
+  },
+  {
+    "name": "Red Drink",
+    "image": "/temp/drinks/clamato.png",
+    "price": null,
+    "variations": [
+      { "name": "Medium", "price": 5.50 },
+      { "name": "Large", "price": 6.50 },
+      { "name": "Medium w/ fruit", "price": 6.50 },
+      { "name": "Large w/ fruit", "price": 7.50 }
+    ],
+    "featured": false
+  },
+  {
+    "name": "Mexican Sodas",
+    "image": "/temp/drinks/mineral_water.png",
+    "price": 3.50,
+    "variations": [],
+    "featured": false
+  },
+]
