@@ -110,56 +110,62 @@
 export const foodData = [
     {
       "name": "Cup",
-      "category": "Ice Cream",
+      "category": "ice-cream",
       "image": "/temp/ice-cream/cup.png",
       "price": null,
       "variations" : [
         { "name": "1 scoop", "price": 3.75 },
         { "name": "2 scoops", "price": 4.75 },
         { "name": "3 scoops", "price": 5.75 }
-      ]
+      ],
+      featured: false
     },
     {
       "name": "Cone",
-      "category": "Ice Cream",
+      "category": "ice-cream",
       "image": "/temp/ice-cream/cone.png",
       "price": null,
       "variations" : [
         { "name": "1 scoop", "price": 4.75 },
         { "name": "2 scoops", "price": 5.75 },
         { "name": "3 scoops", "price": 6.75 }
-      ]
+      ],
+      featured: false
     },
     {
       "name": "Waffle Bowl",
-      "category": "Ice Cream",
+      "category": "ice-cream",
       "image": "/temp/ice-cream/waffle-bowl.png",
       "price": null,
       "variations" : [
         { "name": "1 scoop", "price": 5.75 },
         { "name": "2 scoops", "price": 6.75 },
         { "name": "3 scoops", "price": 7.75 }
-      ]
+      ],
+      featured: true
     },
     {
       "name": "Cream Base",
-      "category": "Popsicles",
+      "category": "popsicles",
       "image": "/temp/popsicles/cream.png",
       "price": 3.99,
-      "variations" : []
+      "variations" : [],
+      featured: false
     },
     {
       "name": "Water Based",
-      "category": "Popsicles",
+      "category": "popsicles",
       "image": "/temp/popsicles/water.png",
       "price": 2.99,
-      "variations" : []
+      "variations" : [],
+      featured: false
     },
     {
       "name": "Dipped in Chocolate",
-      "category": "Popsicles",
+      "category": "popsicles",
       "image": "/temp/popsicles/chocolate.png",
       "price": 7.75,
-      "variations" : []
+      "variations" : [],
+      featured: true
     },
   ];
