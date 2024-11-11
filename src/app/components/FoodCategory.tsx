@@ -1,4 +1,4 @@
-// TODO: Props to add: neon-bar (img), section title (img), food description (string), 
+// TODO: Props to add: neon-bar (img), section title (string), food description (string), 
 // TODO: card component - passing in food data
 // TODO: import food data?
 
