@@ -38,9 +38,9 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
 
           <h2 className={classNames("font-acme text-2xl md:text-4xl", classes)}>{categoryTitle}</h2>
         </div>
-        <p className="text-xl">{categoryDescription}</p>
+        <p className="text-xl pt-3">{categoryDescription}</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-14">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-14">
         {foodItems.map((item: FoodItem, index: number) => (
           <div
             key={index}
