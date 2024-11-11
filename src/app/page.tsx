@@ -1,6 +1,6 @@
 import { Hero, MenuIcons,LocationHours, FollowSocial, FoodCategory } from "@/app/components";
 import Image from "next/image";
-import { iceCreamData } from "./data/foodData";
+import { iceCreamData, popsiclesData } from "./data/foodData";
 export default function Home() {
   return (
    <div>
@@ -15,6 +15,13 @@ export default function Home() {
       classes="text-neon-pink pink-neon-glow"
     />
     {/* Pocpsicles */}
+    <FoodCategory
+      imgSrc="/icons/popsicle.svg"
+      categoryTitle="Popsicles"
+      categoryDescription="This is the description of the popsicles at the store."
+      foodItems={popsiclesData}
+      classes="text-neon-turquoise turquoise-neon-glow"
+    />
     {/* Snacks */}
     {/* Drinks */}  
     <div className="wrapper py-4 md:py-8">
