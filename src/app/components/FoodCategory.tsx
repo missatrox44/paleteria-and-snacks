@@ -10,7 +10,7 @@ const FoodCategory = () => {
       <div className="flex flex-col">
         <div className="flex items-center gap-x-4">
           <Image src="/icons/drinks.svg" alt="Drinks icon" width={32} height={32} /> 
-          <h2 className="font-acme text-2xl md:text-4xl text-neon-pink">Ice Cream</h2>
+          <h2 className="font-acme text-2xl md:text-4xl text-neon-pink pink-neon-glow">Ice Cream</h2>
           {/* <Image className="object-fit" src="/text/ice-cream-text.svg" alt="Ice Cream" width={1000} height={1000} />  */}
         </div>
         <p className="text-xl">This is the description of the ice cream at the store.</p>
