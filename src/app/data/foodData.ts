@@ -153,7 +153,7 @@ export const snacksData = [
   },
   {
     "name": "Papas Locas",
-    "image": "/temp/snacks/papas_locas.png",
+    "image": "/temp/snacks/papaslocas.png",
     "price": null,
     "variations": [
       { "name": "Sencillas", "price": 4.99 },
@@ -170,28 +170,28 @@ export const snacksData = [
   },
   {
     "name": "Hot Cheetos with Cheese",
-    "image": "/temp/snacks/hot_cheetos_cheese.png",
+    "image": "/temp/snacks/hotcheetos.png",
     "price": 4.99,
     "variations": [],
     "featured": false
   },
   {
     "name": "Chicharrines",
-    "image": "/temp/snacks/chicharrines.png",
+    "image": "/temp/snacks/chicharinnes.png",
     "price": 3.99,
     "variations": [],
     "featured": false
   },
   {
     "name": "Cotton Candy",
-    "image": "/temp/snacks/cotton_candy.png",
+    "image": "/temp/snacks/cotton-candy.png",
     "price": 3.99,
     "variations": [],
     "featured": false
   },
   {
     "name": "Banana Split",
-    "image": "/temp/snacks/banana_split.png",
+    "image": "/temp/snacks/bananasplit.png",
     "price": 7.75,
     "variations": [],
     "featured": true
