@@ -40,16 +40,22 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
         </div>
         <p className="text-xl">{categoryDescription}</p>
       </div>
-
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-14">
         {foodItems.map((item: FoodItem, index: number) => (
           <div
             key={index}
-            className="bg-gradient-to-b from-card-gr-top via-card-gr-middle to-card-gr-bottom flex items-center justify-center col-span-1 py-4 rounded-3xl"
+            className="col-span-1 flip-card"
           >
-            <div className="flex flex-col gap-y-6 items-center">
-              <Image src={item.image} alt={item.name} width={150} height={150} />
-              <p className="font-acme text-2xl text-center">{item.name}</p>
+            <div className="flip-card-inner w-full h-full">
+              <div className="flip-card-front bg-gradient-to-b from-card-gr-top via-card-gr-middle to-card-gr-bottom flex items-center justify-center rounded-3xl">
+                <div className="flex flex-col gap-y-6 items-center">
+                  <Image src={item.image} alt={item.name} width={150} height={150} />
+                  <p className="font-acme text-2xl text-center">{item.name}</p>
+                </div>
+              </div>
+              <div className="flip-card-back bg-gradient-to-b from-card-gr-top via-card-gr-middle to-card-gr-bottom flex items-center justify-center rounded-3xl">
+                <h1 className="text-white font-acme text-2xl">Back of {item.name}</h1>
+              </div>
             </div>
           </div>
         ))}
