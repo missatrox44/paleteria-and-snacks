@@ -23,7 +23,8 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
 
   return (
     <section id={id} className="wrapper py-10 relative">
-      <div className="absolute -left-8 top-0 w-10 h-full">
+      {/* vertical neon bar */}
+      <div className="absolute -left-8 top-0 w-10 h-full hidden md:block">
         <Image
           src={neonBar}
           alt="neon bar"
@@ -40,11 +41,11 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
         </div>
         <p className="text-xl pt-3">{categoryDescription}</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-14">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-14">
         {foodItems.map((item: FoodItem, index: number) => (
           <div
             key={index}
-            className="col-span-1 flip-card"
+            className="col-span-4 md:col-span-1 flip-card"
           >
             <div className="flip-card-inner w-full h-full">
               <div className="flip-card-front card-base">
