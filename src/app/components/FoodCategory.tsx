@@ -47,13 +47,13 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
             className="col-span-1 flip-card"
           >
             <div className="flip-card-inner w-full h-full">
-              <div className="flip-card-front bg-gradient-to-b from-card-gr-top via-card-gr-middle to-card-gr-bottom flex items-center justify-center rounded-3xl">
+              <div className="flip-card-front card-base">
                 <div className="flex flex-col gap-y-6 items-center">
-                  <Image src={item.image} alt={item.name} width={150} height={150} />
+                  <Image src={item.image} alt={item.name} width={125} height={125}    />
                   <p className="font-acme text-2xl text-center">{item.name}</p>
                 </div>
               </div>
-              <div className="flip-card-back bg-gradient-to-b from-card-gr-top via-card-gr-middle to-card-gr-bottom flex items-center justify-center rounded-3xl">
+              <div className="flip-card-back card-base">
                 <h1 className="text-white font-acme text-2xl">Back of {item.name}</h1>
               </div>
             </div>

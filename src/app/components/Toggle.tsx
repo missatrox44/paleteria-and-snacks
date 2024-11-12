@@ -10,7 +10,7 @@ const Toggle = () => {
       <div className="flex items-center space-x-4">
         <button
           onClick={() => setIsEnglish(!isEnglish)}
-          className={`relative w-12 h-6 rounded-full transition-colors duration-300 ease-in-out focus:outline-none ${
+          className={`relative w-12 h-6 rounded-full transition-colors duration-300 ease-in-out ${
             isEnglish
               ? "bg-gradient-to-r from-[#FF7F3F] via-[#FF9A3C] to-[#FFB547]"
               : "bg-gradient-to-r from-[#844AEA] via-[#5C6ADA] to-[#388DD5]"
