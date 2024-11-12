@@ -1,41 +1,65 @@
-// TODO: Props to add: neon-bar (img), section title (img), food description (string), 
-// TODO: card component - passing in food data
-// TODO: import food data?
 
 import Image from "next/image";
-const FoodCategory = () => {
+import classNames from "classnames";
+import { FoodItem } from "../types/food";
+
+interface FoodCategoryProps {
+  id: string;
+  neonBar: string;
+  imgSrc: string;
+  categoryTitle: string;
+  categoryDescription: string;
+  foodItems: FoodItem[];
+  classes: string;
+}
+const FoodCategory: React.FC<FoodCategoryProps> = ({
+  id = "",
+  neonBar = "",
+  imgSrc = "",
+  categoryTitle,
+  categoryDescription,
+  foodItems,
+  classes = "" }) => {
 
   return (
-    <section className="wrapper py-10">
-      <div className="flex flex-col pb-8">
-        <div className="flex items-center gap-x-4">
-          <Image src="/icons/ice-cream.svg" alt="Ice Cream icon" width={50} height={50} /> 
-          <h2 className="font-acme text-2xl md:text-4xl text-neon-pink pink-neon-glow">Ice Cream</h2>
-          {/* <Image className="object-fit" src="/text/ice-cream-text.svg" alt="Ice Cream" width={1000} height={1000} />  */}
-        </div>
-        <p className="text-xl">This is the description of the ice cream at the store.</p>
+    <section id={id} className="wrapper py-10 relative">
+      {/* vertical neon bar */}
+      <div className="absolute -left-8 top-0 w-10 h-full hidden md:block">
+        <Image
+          src={neonBar}
+          alt="neon bar"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-      <div className="border border-blue-400">
-          CARD
+      <div className="flex flex-col pb-8">
+        <div className="flex items-center gap-x-4">
+          <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
+
+          <h2 className={classNames("font-acme text-2xl md:text-4xl", classes)}>{categoryTitle}</h2>
         </div>
-   
-      <div className="border border-blue-400">
-          CARD
-        </div>
-      <div className="border border-blue-400">
-          CARD
-        </div>
-        <div className="border border-blue-400">
-          CARD
-        </div>
-        <div className="border border-blue-400">
-          CARD
-        </div>
-        <div className="border border-blue-400">
-          CARD
-        </div>
+        <p className="text-xl pt-3">{categoryDescription}</p>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-14">
+        {foodItems.map((item: FoodItem, index: number) => (
+          <div
+            key={index}
+            className="col-span-4 md:col-span-1 flip-card"
+          >
+            <div className="flip-card-inner w-full h-full">
+              <div className="flip-card-front card-base">
+                <div className="flex flex-col gap-y-6 items-center">
+                  <Image src={item.image} alt={item.name} width={125} height={125}    />
+                  <p className="font-acme text-2xl text-center">{item.name}</p>
+                </div>
+              </div>
+              <div className="flip-card-back card-base">
+                <h1 className="text-white font-acme text-2xl">Back of {item.name}</h1>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

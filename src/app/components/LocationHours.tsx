@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const LocationHours = () => {
   return (
-    <section className="relative">
+    <section id="hours-location" className="relative">
       <div className="absolute right-0 top-0 z-0 opacity-40">
         <Image src="/bg-icons/pancake.svg" alt="Pancake icon" width={350} height={350} />
       </div>
@@ -22,7 +22,7 @@ const LocationHours = () => {
             ></iframe>
           </div>
         </div>
-        <div className="col-span-2 order-1 md:order-2 flex items-center kd-grey">
+        <div className="col-span-2 order-1 md:order-2 flex items-center">
           <div className="flex flex-col gap-y-4">
             <div className="flex gap-x-4 items-center">
               <Image src="/icons/clock.svg" alt="Clock Icon" width={32} height={32} />

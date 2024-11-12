@@ -27,12 +27,13 @@ const DesktopNavBar = () => {
     >
       <div className="flex wrapper justify-between py-7 items-center">
         <div className="flex gap-x-6 items-center">
-          <Image src="/logo.png" alt="KD's Paleteria Logo" width={48} height={48} />
-          <ul className="flex gap-x-6">
+          <Image src="/logo.png" alt="KD's Paleteria Logo" width={72} height={72} />
+          <ul className="flex gap-x-6 text-xl">
             <li><Link className="hover-link" href="#ice-cream">Ice Cream</Link></li>
             <li><Link className="hover-link" href="#popsicles">Popsicles</Link></li>
             <li><Link className="hover-link" href="#snacks">Snacks</Link></li>
             <li><Link className="hover-link" href="#drinks">Drinks</Link></li>
+            <li><Link className="hover-link" href="#hours-location">Hours & Location</Link></li>
           </ul>
         </div>
         <Toggle />
