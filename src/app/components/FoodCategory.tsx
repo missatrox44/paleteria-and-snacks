@@ -32,35 +32,44 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
           objectFit="cover"
         />
       </div>
-
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
           <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
-
           <h2 className={classNames("font-acme text-2xl md:text-4xl", classes)}>{categoryTitle}</h2>
         </div>
         <p className="text-xl pt-3">{categoryDescription}</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-14">
+      <div className="flip-card-container">
         {foodItems.map((item: FoodItem, index: number) => (
-          <div
-            key={index}
-            className="col-span-4 md:col-span-1 flip-card"
-          >
+          <div key={index} className="flip-card">
             <div className="flip-card-inner w-full h-full">
               <div className="flip-card-front card-base">
                 <div className="flex flex-col gap-y-6 items-center">
-                  <Image src={item.image} alt={item.name} width={125} height={125}    />
+                  <Image src={item.image} alt={item.name} width={125} height={125} />
                   <p className="font-acme text-2xl text-center">{item.name}</p>
                 </div>
               </div>
-              <div className="flip-card-back card-base">
-                <h1 className="text-white font-acme text-2xl">Back of {item.name}</h1>
+              <div className="flip-card-back card-base relative">
+                <div className="absolute w-full h-full z-10 flex justify-center items-center top-0 left-0">
+                  <div className="flex flex-col items-center">
+                    <ul>
+                      <li>variation one</li>
+                      <li>variation two</li>
+                      <li>variation three</li>
+                      <li>variation four</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-y-6 items-center z-0 blur-sm opacity-50">
+                  <Image src={item.image} alt={item.name} width={125} height={125} />
+                  <p className="font-acme text-2xl text-center">{item.name}</p>
+                </div>
               </div>
             </div>
           </div>
         ))}
       </div>
+
     </section>
   );
 };
