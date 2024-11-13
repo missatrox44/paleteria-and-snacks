@@ -49,8 +49,21 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
                   <p className="font-acme text-2xl text-center">{item.name}</p>
                 </div>
               </div>
-              <div className="flip-card-back card-base">
-                <h1 className="text-white font-acme text-2xl">Back of {item.name}</h1>
+              <div className="flip-card-back card-base relative">
+                <div className="absolute w-full h-full z-10 flex justify-center items-center top-0 left-0">
+                  <div className="flex flex-col items-center">
+                    <ul>
+                      <li>variation one</li>
+                      <li>variation two</li>
+                      <li>variation three</li>
+                      <li>variation four</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-y-6 items-center z-0 blur-sm opacity-50">
+                  <Image src={item.image} alt={item.name} width={125} height={125} />
+                  <p className="font-acme text-2xl text-center">{item.name}</p>
+                </div>
               </div>
             </div>
           </div>
