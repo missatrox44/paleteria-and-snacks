@@ -239,6 +239,11 @@ body {
         transform: rotateY(180deg);
         // filter: blur(10px);
 
+        img {
+          width: 125px;
+          height: 125px;
+          object-fit: scale-down;
+        }
       }
       // .flip-card-back .absolute {
       //   display: flex;

@@ -52,12 +52,15 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
               <div className="flip-card-back card-base relative">
                 <div className="absolute w-full h-full z-10 flex justify-center items-center top-0 left-0">
                   <div className="flex flex-col items-center">
-                    <ul>
-                      <li>variation one</li>
-                      <li>variation two</li>
-                      <li>variation three</li>
-                      <li>variation four</li>
-                    </ul>
+                    <ul className="text-lg md:text-xl font-extrabold">
+                        {item.price !== null ? (
+                          <li>${item.price.toFixed(2)} each</li>
+                        ) : (
+                          item.variations?.map((variation, varIndex) => (
+                            <li key={varIndex}>{variation.name}: ${variation.price.toFixed(2)}</li>
+                          ))
+                        )}
+                      </ul>
                   </div>
                 </div>
                 <div className="flex flex-col gap-y-6 items-center z-0 blur-sm opacity-50">
