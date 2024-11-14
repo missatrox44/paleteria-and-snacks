@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import InstagramEmbed from "./InstagramEmbed";
 
 const FollowSocial = () => {
 
@@ -13,7 +14,7 @@ const FollowSocial = () => {
         <div className="col-span-2">
           <p className="text-2xl">See what’s fresh at KD’s Paleteria & Snacks. From vibrant treats to special creations, our Facebook & Instagram feeds bring you all the latest delights!</p>
           <div className="flex gap-x-4 justify-around items-center pt-[25%]">
-            <div className="social-icon">
+              <div className="social-icon">
                 <Link target="_blank" href="https://www.facebook.com/profile.php?id=61566820604254">
                   <Image src="/icons/facebook-gradient.svg" alt="Facebook icon" width={128} height={128} />
                 </Link>
@@ -27,7 +28,8 @@ const FollowSocial = () => {
 
         </div>
         <div className="col-span-2 flex items-center">
-          <Image src="/temp/collage.png" alt="Horizontal purple neon bar" width={500} height={500} />
+          {/* <Image src="/temp/collage.png" alt="Horizontal purple neon bar" width={500} height={500} /> */}
+          <InstagramEmbed />
         </div>
       </div>
     </section>
