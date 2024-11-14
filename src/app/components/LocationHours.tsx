@@ -4,7 +4,7 @@ import Link from "next/link";
 const LocationHours = () => {
   return (
     <section id="hours-location" className="relative">
-      <div className="absolute right-0 top-0 z-0 opacity-40">
+      <div className="absolute right-0 top-0 z-[-1] opacity-40">
         <Image src="/bg-icons/pancake.svg" alt="Pancake icon" width={350} height={350} />
       </div>
       <div className="wrapper grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
