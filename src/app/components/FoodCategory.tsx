@@ -28,8 +28,10 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
         <Image
           src={neonBar}
           alt="neon bar"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
+          // layout="fill"
+          // objectFit="cover"
         />
       </div>
       <div className="flex flex-col pb-8">
