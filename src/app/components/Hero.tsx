@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <div className="relative flex justify-center">
-      <video width="1920" height="1080" autoPlay muted playsInline loop>
+      <video width="100%" height="auto" autoPlay muted playsInline loop>
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
