@@ -1,12 +1,14 @@
 "use client";
+
 import DesktopMenu from "./DesktopMenu";
 import MobileMenuComponent from "./MobileMenu";
-
-import { useMediaQuery } from "@uidotdev/usehooks";
-
+import { useWindowSize } from "@uidotdev/usehooks";
 
 const FullMenu = () => {
-  const isMobile = useMediaQuery("only screen and (max-width : 768px)");
+  const size = useWindowSize();
+
+  // Determine if the viewport is mobile-sized
+  const isMobile = size.width && size.width < 768;
 
   return (
     <>
