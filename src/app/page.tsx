@@ -1,4 +1,4 @@
-import { Hero, MenuIcons, LocationHours, FollowSocial, DesktopMenu } from "@/app/components";
+import { Hero, MenuIcons, LocationHours, FollowSocial, FullMenu } from "@/app/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,7 +6,8 @@ export default function Home() {
     <div>
       <Hero />
       <MenuIcons />
-      <DesktopMenu />
+      <FullMenu />
+
 
       <div className="wrapper py-4 md:py-8">
         <Image src="/neon-bars/purple-neon-slim.svg" alt="Horizontal purple neon bar" width={1920} height={10} />
