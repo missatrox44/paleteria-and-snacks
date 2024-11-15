@@ -8,7 +8,6 @@ export default function Home() {
       <MenuIcons />
       <FullMenu />
 
-
       <div className="wrapper py-4 md:py-8">
         <Image src="/neon-bars/purple-neon-slim.svg" alt="Horizontal purple neon bar" width={1920} height={10} />
       </div>

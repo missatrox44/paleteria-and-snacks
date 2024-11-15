@@ -1,10 +1,11 @@
 // import Image from "next/image";
 // import { FoodCategory } from "@/app/components";
 // import { iceCreamData, popsiclesData, snacksData, drinksData } from "../data/foodData";
+import FoodSwiper from "./FoodSwiper";
 const MobileMenu = () => {
   return (
   <>
-  mobile menu here
+    <FoodSwiper />
     {/* <div className="relative">
       <div className="absolute right-0 top-20 z-[-1] opacity-40">
         <Image src="/bg-icons/agua.svg" alt="agua fresca icon" width={550} height={550} />
@@ -68,7 +69,7 @@ const MobileMenu = () => {
         />
       </div>
     </div> */}
-  </>
+    </>
   );
 };
 
