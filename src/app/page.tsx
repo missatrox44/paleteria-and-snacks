@@ -6,28 +6,32 @@ export default function Home() {
     <div>
       <Hero />
       <MenuIcons />
-      {/* IceCream */}
-      <div className="pb-10">
-        <FoodCategory
-          id="ice-cream"
-          neonBar="/neon-bars/pink-neon-vertical2.svg"
-          imgSrc="/icons/ice-cream.svg"
-          categoryTitle="Ice Cream"
-          categoryDescription="This is the description of the ice cream at the store."
-          foodItems={iceCreamData}
-          classes="text-neon-pink pink-neon-glow"
-        />
-      </div>
-      <div className="pb-10">
-        <FoodCategory
-          id="popsicles"
-          neonBar="/neon-bars/turquoise-neon-vertical2.svg"
-          imgSrc="/icons/popsicle.svg"
-          categoryTitle="Popsicles"
-          categoryDescription="This is the description of the popsicles at the store."
-          foodItems={popsiclesData}
-          classes="text-neon-turquoise turquoise-neon-glow"
-        />
+      <div className="relative">
+        <div className="absolute right-0 top-20 z-[-1] opacity-40">
+          <Image src="/bg-icons/agua.svg" alt="agua fresca icon" width={600} height={600} />
+        </div>
+        <div className="pb-10">
+          <FoodCategory
+            id="ice-cream"
+            neonBar="/neon-bars/pink-neon-vertical2.svg"
+            imgSrc="/icons/ice-cream.svg"
+            categoryTitle="Ice Cream"
+            categoryDescription="This is the description of the ice cream at the store."
+            foodItems={iceCreamData}
+            classes="text-neon-pink pink-neon-glow"
+          />
+        </div>
+        <div className="pb-10">
+          <FoodCategory
+            id="popsicles"
+            neonBar="/neon-bars/turquoise-neon-vertical2.svg"
+            imgSrc="/icons/popsicle.svg"
+            categoryTitle="Popsicles"
+            categoryDescription="This is the description of the popsicles at the store."
+            foodItems={popsiclesData}
+            classes="text-neon-turquoise turquoise-neon-glow"
+          />
+        </div>
       </div>
       <div className="pb-10">
         <FoodCategory
