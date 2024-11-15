@@ -7,3 +7,4 @@ export { default as LocationHours } from "./LocationHours";
 export { default as FollowSocial } from "./FollowSocial";
 export { default as InstagramEmbed } from "./InstagramEmbed";
 export { default as FoodCategory } from "./FoodCategory";
+export { default as DesktopMenu } from "./DesktopMenu";
