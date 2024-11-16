@@ -1,24 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Toggle from "./Toggle";
+import useScrolled from "../hooks/useScrolled";
 
 const MobileNavBar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const scrolled = useScrolled();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
