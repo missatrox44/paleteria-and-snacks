@@ -12,3 +12,4 @@ export { default as MobileMenu } from "./MobileMenu";
 export { default as FullMenu } from "./FullMenu";
 export { default as FoodSwiper } from "./FoodSwiper";
 export { default as FoodCard } from "./FoodCard";
+export { default as MobileNavBar } from "./MobileNavBar";

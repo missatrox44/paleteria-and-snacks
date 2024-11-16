@@ -192,14 +192,19 @@ body {
 }
 
 .flip-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3.5rem 1.5rem;
-  justify-content: start;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 3.5rem 1.5rem;
+  // justify-content: start;
+  margin-top: 1.75rem;
 
-  // @screen md {
-  //   justify-center: start;
-  // }
+  @screen md {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem 1.5rem;
+    justify-content: start;
+    margin-top: 0;
+  }
 
   .flip-card {
     // background-color: transparent;
@@ -208,11 +213,16 @@ body {
 
     .flip-card-inner {
       position: relative;
-      width: 275px;
-      height: 275px;
+      width: 210px;
+      height: 210px;
       text-align: center;
       transition: transform 0.6s;
       transform-style: preserve-3d;
+
+      @screen md {
+        width: 275px;
+        height: 275px;
+      }
 
       .flip-card-front,
       .flip-card-back {
@@ -228,9 +238,14 @@ body {
         justify-content: center;
 
         img {
-          width: 125px;
-          height: 125px;
+          width: 100px;
+          height: 100px;
           object-fit: scale-down;
+
+          @screen md {
+            width: 150px;
+            height: 150px;
+          }
         }
 
       }
@@ -240,11 +255,17 @@ body {
         // filter: blur(10px);
 
         img {
-          width: 125px;
-          height: 125px;
+          width: 100px;
+          height: 100px;
           object-fit: scale-down;
+
+          @screen md {
+            width: 150px;
+            height: 150px;
+          }
         }
       }
+
       // .flip-card-back .absolute {
       //   display: flex;
       //   align-items: center;
@@ -307,4 +328,16 @@ body {
       transform: scale(1.1);
     }
   }
+}
+
+
+//SWIPER OVERRIDE STYLES
+.custom-swiper .swiper-button-prev,
+.custom-swiper .swiper-button-next {
+  color: var(--light-purple) !important;
+}
+
+.swiper-pagination-progressbar-fill {
+  background-color: var(--light-purple) !important; 
+  height: 4px !important; 
 }
