@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import 'swiper/css';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import FoodCard from "./FoodCard";
 import { FoodItem } from "../types/food";
 import classNames from "classnames";
@@ -15,7 +18,7 @@ interface FoodSwiperProps {
   classes: string;
 }
 
-const FoodSwiper: React.FC<FoodSwiperProps> = ({    
+const FoodSwiper: React.FC<FoodSwiperProps> = ({
   id = "",
   imgSrc = "",
   categoryTitle,
@@ -28,14 +31,23 @@ const FoodSwiper: React.FC<FoodSwiperProps> = ({
 
   return (
     <section id={id} className="wrapper py-8">
-           <div className="flex flex-col pb-8">
+      <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
           <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
           <h2 className={classNames("font-acme text-2xl", classes)}>{categoryTitle}</h2>
         </div>
         <p className="text-lg md:text-3xl pt-3">{categoryDescription}</p>
       </div>
-      <Swiper spaceBetween={40} slidesPerView={1.75}>
+      <Swiper
+        modules={[ Navigation, Pagination]} 
+        // spaceBetween={40}
+        slidesPerView={1.5}
+        centeredSlides={true} 
+        navigation
+        pagination={{
+          type: "progressbar",
+        }}
+      >
         {foodItems.map((item, index) => (
           <SwiperSlide key={index}>
             <FoodCard foodItems={[item]} />
