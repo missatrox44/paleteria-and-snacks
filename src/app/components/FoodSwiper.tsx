@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -39,6 +39,7 @@ const FoodSwiper: React.FC<FoodSwiperProps> = ({
         <p className="text-lg md:text-3xl pt-3">{categoryDescription}</p>
       </div>
       <Swiper
+      className="custom-swiper"
         modules={[ Navigation, Pagination]} 
         // spaceBetween={40}
         slidesPerView={1.5}
