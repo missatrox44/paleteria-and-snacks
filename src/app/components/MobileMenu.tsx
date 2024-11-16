@@ -1,12 +1,38 @@
 // import Image from "next/image";
 // import { FoodCategory } from "@/app/components";
-// import { iceCreamData, popsiclesData, snacksData, drinksData } from "../data/foodData";
+import { iceCreamData, popsiclesData, snacksData, drinksData } from "../data/foodData";
 import FoodSwiper from "./FoodSwiper";
 const MobileMenu = () => {
   return (
-  <>
-    <FoodSwiper />
-    {/* <div className="relative">
+    <>
+      <FoodSwiper id="ice-cream"
+        imgSrc="/icons/ice-cream.svg"
+        categoryTitle="Ice Cream"
+        categoryDescription="This is the description of the ice cream at the store."
+        foodItems={iceCreamData}
+        classes="text-neon-pink pink-neon-glow" />
+      <FoodSwiper id="popsicles"
+
+        imgSrc="/icons/popsicle.svg"
+        categoryTitle="Popsicles"
+        categoryDescription="This is the description of the popsicles at the store."
+        foodItems={popsiclesData}
+        classes="text-neon-turquoise turquoise-neon-glow" />
+      <FoodSwiper id="snacks"
+
+        imgSrc="/icons/snack.svg"
+        categoryTitle="Snacks"
+        categoryDescription="This is the description of the snacks at the store."
+        foodItems={snacksData}
+        classes="text-neon-orange orange-neon-glow" />
+      <FoodSwiper id="drinks"
+
+        imgSrc="/icons/drinks.svg"
+        categoryTitle="Drinks"
+        categoryDescription="This is the description of the drinks at the store."
+        foodItems={drinksData}
+        classes="text-neon-green green-neon-glow" />
+      {/* <div className="relative">
       <div className="absolute right-0 top-20 z-[-1] opacity-40">
         <Image src="/bg-icons/agua.svg" alt="agua fresca icon" width={550} height={550} />
       </div>

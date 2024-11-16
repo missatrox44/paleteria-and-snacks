@@ -1,7 +1,7 @@
 "use client";
 
 import DesktopMenu from "./DesktopMenu";
-import MobileMenuComponent from "./MobileMenu";
+import MobileMenu from "./MobileMenu";
 import { useWindowSize } from "@uidotdev/usehooks";
 
 const FullMenu = () => {
@@ -12,7 +12,7 @@ const FullMenu = () => {
 
   return (
     <>
-      {isMobile ? <MobileMenuComponent /> : <DesktopMenu />}
+      {isMobile ? <MobileMenu /> : <DesktopMenu />}
     </>
   );
 };
