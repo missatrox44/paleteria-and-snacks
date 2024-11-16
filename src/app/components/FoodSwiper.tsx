@@ -1,21 +1,25 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
+import FoodCard from "./FoodCard";
+import { FoodItem } from "../types/food";
 
-const FoodSwiper = () => {
+interface FoodSwiperProps {
+  foodItems: FoodItem[];
+}
+
+const FoodSwiper: React.FC<FoodSwiperProps> = ({ foodItems }) => {
+  if (!foodItems || foodItems.length === 0) {
+    return <div>No food items available</div>;
+  }
 
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-
+    <Swiper spaceBetween={50} slidesPerView={1}>
+      {foodItems.map((item, index) => (
+        <SwiperSlide key={index}>
+          <FoodCard foodItems={[item]} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
