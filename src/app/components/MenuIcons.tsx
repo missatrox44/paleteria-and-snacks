@@ -3,7 +3,7 @@ import Link from "next/link";
 const MenuIcons = () => {
  
   return (
-    <section className="wrapper grid grid-cols-2 md:grid-cols-4 gap-8 pt-[150px] pb-[55px]">
+    <section className="wrapper grid grid-cols-2 md:grid-cols-4 gap-8 pt-[90px] md:pt-[150px] pb-[55px]">
       <Link href="#ice-cream" className="menu-icon">
         <div className="flex flex-col items-center gap-y-6">
           <Image src="/icons/ice-cream.svg" alt="Ice Cream Icon" width={64} height={64} />
