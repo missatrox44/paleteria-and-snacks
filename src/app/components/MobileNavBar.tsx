@@ -15,12 +15,14 @@ const MobileNavBar = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  // ${scrolled ? "bg-black/30 backdrop-blur-md" : ""
+  // }
+
   return (
     <nav
-      className={` sm:hidden fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-black/30 backdrop-blur-md" : ""
-        }`}
+      className={`sm:hidden fixed top-0 left-0 w-full z-50 transition-all duration-300`}
     >
-      <div className="flex  justify-between p-3 items-center">
+      <div className="flex justify-between p-3 items-center">
         <button
           className="p-2 focus:outline-none"
           onClick={toggleMenu}
@@ -35,7 +37,7 @@ const MobileNavBar = () => {
 
         {/* Drawer Menu */}
         <div
-          className={`fixed top-0 left-0 h-full w-1/2 bg-gradient-to-t from-purple-500 to-orange-500 shadow-lg transform transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          className={`fixed top-0 left-0 h-full w-1/2 bg-gradient-to-t from-purple-500 to-orange-500 shadow-lg transform transition-transform duration-300 z-[999] ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
             }`}
         >
           <div className="flex flex-col h-full">
