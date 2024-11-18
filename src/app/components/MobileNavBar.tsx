@@ -20,6 +20,7 @@ const MobileNavBar = () => {
         }`}
     >
       <div className="flex justify-between p-3 items-center">
+        <div className="border-2 border-pink-400 rounded-xl">
         <button
           className="p-2 focus:outline-none"
           onClick={toggleMenu}
@@ -31,17 +32,18 @@ const MobileNavBar = () => {
           <Image src="/icons/menu.svg" alt="Open Menu" width={24} height={24} />
           {/* )} */}
         </button>
-
+        </div>
+        <Toggle/>
         {/* Drawer Menu */}
         <div
-          className={`fixed top-0 left-0 h-screen w-1/2 bg-gradient-to-t from-purple-500 to-orange-500 shadow-lg transform transition-transform duration-300 z-[999] ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          className={`fixed top-0 left-0 h-screen w-full bg-black shadow-lg transform transition-transform duration-300 z-[999] ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
             }`}
         >
           <div className="flex flex-col h-full">
             {/* Header with Logo and Close Button */}
             <div className="flex justify-between pt-3 px-3 pb-6">
               <div>
-                <Image src="/logo.png" alt="Logo" width={35} height={35} />
+                <Image src="/logo.png" alt="Logo" width={40} height={40} />
               </div>
               <button
                 className="p-2 focus:outline-none"
@@ -72,9 +74,9 @@ const MobileNavBar = () => {
             </ul>
 
             {/* Toggle Component */}
-            <div className="mt-auto p-6">
+            {/* <div className="mt-[200px] p-6">
               <Toggle />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
