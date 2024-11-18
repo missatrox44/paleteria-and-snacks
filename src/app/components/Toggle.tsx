@@ -24,7 +24,7 @@ const Toggle = () => {
           ></span>
         </button>
       </div>
-      <p>EN/ES</p>
+      <p className="text-sm ">EN/ES</p>
     </div>
   );
 };
