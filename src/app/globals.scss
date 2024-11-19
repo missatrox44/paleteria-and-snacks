@@ -94,7 +94,6 @@ body {
 }
 
 // Menu Icons Styles
-// Mixin should be outside .menu-icon
 @mixin hover-color($color) {
   &:hover {
      p {
@@ -131,10 +130,6 @@ body {
   @extend .menu-icon;
   @include hover-color(var(--neon-green));
 }
-
-
-
-
 
 .pink-neon-glow {
   position: relative;
