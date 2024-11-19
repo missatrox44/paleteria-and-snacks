@@ -1,11 +1,10 @@
 <svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">  
   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1=".5" y2="511.5">
-    <stop offset="0" stop-color="#76FF03"/> <!-- Lime Green -->
+    <stop offset="0" stop-color="#00FF80"/> <!-- Lime Green -->
     <stop offset="0.2" stop-color="#4FFF33"/> <!-- Bright Green -->
-    <stop offset="0.4" stop-color="#00FF80"/> <!-- Aqua Green -->
-    <stop offset="0.6" stop-color="#00FFA0"/> <!-- Light Teal Green -->
-    <stop offset="0.8" stop-color="#AFFF00"/> <!-- Yellow-Green -->
-    <stop offset="1" stop-color="#FFFF00"/> <!-- Pure Yellow -->
+    <stop offset="0.4" stop-color="#76FF03"/> <!-- Aqua Green -->
+
+
   </linearGradient>
 
   
