@@ -1,15 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useStore from "../store";
 
 const Toggle = () => {
-  const [isEnglish, setIsEnglish] = useState(false);
+  // Access the language and setLanguage from Zustand store
+  const { language, setLanguage } = useStore();
+
+  const [isEnglish, setIsEnglish] = useState(language === "en");
+
+  useEffect(() => {
+    // Sync local state with global state from the store
+    setIsEnglish(language === "en");
+  }, [language]);
+
+  const toggleLanguage = () => {
+    const newLanguage = isEnglish ? "es" : "en";
+    setLanguage(newLanguage);  // Update global state
+  };
 
   return (
     <div className="flex flex-col items-center gap-y-1">
       <div className="flex items-center space-x-4">
         <button
-          onClick={() => setIsEnglish(!isEnglish)}
+          onClick={toggleLanguage}
           className={`relative w-12 h-6 rounded-full transition-colors duration-300 ease-in-out ${
             isEnglish
               ? "bg-gradient-to-r from-[#FF7F3F] via-[#FF9A3C] to-[#FFB547]"
@@ -24,7 +38,8 @@ const Toggle = () => {
           ></span>
         </button>
       </div>
-      <p className="text-sm ">EN/ES</p>
+      <p className="text-sm">EN/ES</p>
+      <p>{isEnglish ? "English" : "Español"}</p>
     </div>
   );
 };
