@@ -1,1 +1,16 @@
-<svg id="Layer_1" enable-background="new 0 0 96 96" height="96" viewBox="0 0 96 96" width="96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1=".636" x2="95.365" y1="75.353" y2="20.661"><stop offset="0" stop-color="#4967ff"/><stop offset="1" stop-color="#43caff"/></linearGradient><g><g><path d="m91.002 44.006h-86.003c-2.209 0-4 1.791-4 4s1.791 4 4 4h86.004c2.209 0 4-1.791 4-4s-1.792-4-4.001-4zm0 26.901h-86.003c-2.209 0-4 1.791-4 4s1.791 4 4 4h86.004c2.209 0 4-1.791 4-4s-1.792-4-4.001-4zm-86.003-45.801h86.004c2.209 0 4-1.791 4-4s-1.791-4-4-4h-86.004c-2.209 0-4 1.791-4 4s1.791 4 4 4z" fill="url(#SVGID_1_)"/></g></g></svg>
+<!-- <svg id="Layer_1" enable-background="new 0 0 96 96" height="96" viewBox="0 0 96 96" width="96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1=".636" x2="95.365" y1="75.353" y2="20.661"><stop offset="0" stop-color="#4967ff"/><stop offset="1" stop-color="#43caff"/></linearGradient><g><g><path d="m91.002 44.006h-86.003c-2.209 0-4 1.791-4 4s1.791 4 4 4h86.004c2.209 0 4-1.791 4-4s-1.792-4-4.001-4zm0 26.901h-86.003c-2.209 0-4 1.791-4 4s1.791 4 4 4h86.004c2.209 0 4-1.791 4-4s-1.792-4-4.001-4zm-86.003-45.801h86.004c2.209 0 4-1.791 4-4s-1.791-4-4-4h-86.004c-2.209 0-4 1.791-4 4s1.791 4 4 4z" fill="url(#SVGID_1_)"/></g></g></svg> -->
+
+<svg id="Layer_1" enable-background="new 0 0 96 96" height="96" viewBox="0 0 96 96" width="96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1=".636" x2="95.365" y1="75.353" y2="20.661">
+    <stop offset="0" stop-color="#4967ff"/>
+    <stop offset="1" stop-color="#43caff"/>
+  </linearGradient>
+  <g>
+    <!-- Top Line -->
+    <rect x="5" y="16" width="86" height="8" fill="url(#SVGID_1_)" />
+    <!-- Middle Line -->
+    <rect x="5" y="44" width="86" height="8" fill="url(#SVGID_1_)" />
+    <!-- Bottom Line -->
+    <rect x="5" y="72" width="86" height="8" fill="url(#SVGID_1_)" />
+  </g>
+</svg>
