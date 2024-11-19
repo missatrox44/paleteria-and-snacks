@@ -18,7 +18,7 @@ const MobileMenu = () => {
         categoryTitle="Popsicles"
         categoryDescription="This is the description of the popsicles at the store."
         foodItems={popsiclesData}
-        classes="text-neon-turquoise turquoise-neon-glow" 
+        classes="text-neon-blue blue-neon-glow" 
         swiperClass="popsicles-swiper"/>
 
       <FoodSwiper id="snacks"

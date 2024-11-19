@@ -36,7 +36,7 @@ const FoodSwiper: React.FC<FoodSwiperProps> = ({
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
           <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
-          <h2 className={classNames("font-acme text-[3rem] md:text-2xl", classes)}>{categoryTitle}</h2>
+          <h2 className={classNames("font-acme text-[2.25rem]", classes)}>{categoryTitle}</h2>
         </div>
         <p className="text-lg md:text-3xl pt-3">{categoryDescription}</p>
       </div>
