@@ -15,10 +15,10 @@
   --lightest-black: #1E1E1E;
   --grey: #7A7A7B;
   --light-purple: #844AEA;
-  --neon-pink: '#FF00F5',
-    --neon-turquoise: '#00FFE0',
-    --neon-orange: '#FF9100',
-    --neon-green: '#76FF03',
+  --neon-pink: #FF00F5;
+  --neon-turquoise: #00FFE0;
+  --neon-orange: #FF9100;
+  --neon-green: #76FF03;
 }
 
 body {
@@ -94,16 +94,41 @@ body {
 }
 
 // Menu Icons Styles
+@mixin hover-color($color) {
+  &:hover {
+     p {
+      color: $color;
+    }
+  }
+}
+
 .menu-icon {
   transition: transform 0.3s;
 
   &:hover {
-    transform: scale(1.1);
-
-    p {
-      color: var(--light-purple);
-    }
+    transform: scale(1.2);
   }
+}
+
+// Individual menu items
+.ice-cream {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-pink));
+}
+
+.popsicles {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-turquoise));
+}
+
+.snacks {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-orange));
+}
+
+.drinks {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-green));
 }
 
 .pink-neon-glow {
@@ -332,12 +357,97 @@ body {
 
 
 //SWIPER OVERRIDE STYLES
-.custom-swiper .swiper-button-prev,
-.custom-swiper .swiper-button-next {
-  color: var(--light-purple) !important;
+// @mixin swiper-color($color) {
+
+  
+// }
+
+// .custom-swiper .swiper-button-prev,
+// .custom-swiper .swiper-button-next {
+//   color: var(--light-purple) !important;
+// }
+
+// .swiper-pagination-progressbar-fill {
+//   background-color: var(--light-purple) !important;
+//   height: 4px !important;
+// }
+
+// @mixin swiper-color($swiper-color) {
+//   .custom-swiper {
+//     .swiper-button-prev,
+//     .swiper-button-next {
+//       color: $swiper-color !important;
+//     }
+
+//     .swiper-pagination-progressbar-fill {
+//       background-color: $swiper-color !important;
+//       height: 4px;
+//     }
+//   }
+// }
+
+// .ice-cream-swiper {
+//   @include swiper-color(var(--neon-pink));
+// }
+
+// .popsicles-swiper {
+//   @include swiper-color(var(--neon-pink));
+// }
+
+// .snacks-swiper {
+//   @include swiper-color(var(--neon-pink));
+// }
+
+// .drinks-swiper {
+//   @include swiper-color(var(--neon-pink));
+// }
+
+.custom-swiper.ice-cream-swiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--neon-pink) !important;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--neon-pink) !important;
+    height: 4px !important;
+  }
 }
 
-.swiper-pagination-progressbar-fill {
-  background-color: var(--light-purple) !important; 
-  height: 4px !important; 
+.custom-swiper.popsicles-swiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--neon-turquoise) !important;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--neon-turquoise) !important;
+    height: 4px !important;
+  }
+}
+
+
+.custom-swiper.snacks-swiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--neon-orange) !important;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--neon-orange) !important;
+    height: 4px !important;
+  }
+}
+
+
+.custom-swiper.drinks-swiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--neon-green) !important;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--neon-green) !important;
+    height: 4px !important;
+  }
 }

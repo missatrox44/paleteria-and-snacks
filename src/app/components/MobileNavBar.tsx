@@ -20,7 +20,7 @@ const MobileNavBar = () => {
         }`}
     >
       <div className="flex justify-between p-3 items-center">
-        <div className="border-2 border-pink-400 rounded-xl">
+        <div className="border-2 border-[#FF00F5] rounded-xl">
         <button
           className="p-2 focus:outline-none"
           onClick={toggleMenu}
