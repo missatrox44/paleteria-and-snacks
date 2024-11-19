@@ -4,9 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 import Toggle from "./Toggle";
 import useScrolled from "../hooks/useScrolled";
+import useStore from "../store";
 
 const DesktopNavBar = () => {
   const scrolled = useScrolled();
+  const { language } = useStore() as { language: 'en' | 'es' };
+
+  const menuText = {
+    "en": [
+      "Ice Cream",
+      "Popsicles",
+      "Snacks",
+      "Drinks",
+      "Hours & Location",
+    ],
+    "es": [
+      "Helado",
+      "Paletas",
+      "Bocadillos",
+      "Bebidas",
+      "Horario y Ubicación",
+    ],
+  };
 
   return (
     <nav
@@ -18,11 +37,11 @@ const DesktopNavBar = () => {
         <div className="flex gap-x-6 items-center">
           <Image src="/logo.png" alt="KD's Paleteria Logo" width={72} height={72} />
           <ul className="flex gap-x-6 text-xl">
-            <li><Link className="hover-link" href="#ice-cream">Ice Cream</Link></li>
-            <li><Link className="hover-link" href="#popsicles">Popsicles</Link></li>
-            <li><Link className="hover-link" href="#snacks">Snacks</Link></li>
-            <li><Link className="hover-link" href="#drinks">Drinks</Link></li>
-            <li><Link className="hover-link" href="#hours-location">Hours & Location</Link></li>
+            <li><Link className="hover-link" href="#ice-cream">{menuText[language][0]}</Link></li>
+            <li><Link className="hover-link" href="#popsicles">{menuText[language][1]}</Link></li>
+            <li><Link className="hover-link" href="#snacks">{menuText[language][2]}</Link></li>
+            <li><Link className="hover-link" href="#drinks">{menuText[language][3]}</Link></li>
+            <li><Link className="hover-link" href="#hours-location">{menuText[language][4]}</Link></li>
           </ul>
         </div>
         <Toggle />
