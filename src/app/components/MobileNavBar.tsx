@@ -5,10 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Toggle from "./Toggle";
 import useScrolled from "../hooks/useScrolled";
+import useStore from "../store";
+import { menuText } from "../translations/navbar";
 
 const MobileNavBar = () => {
   const scrolled = useScrolled();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language } = useStore() as { language: 'en' | 'es' };
+
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -57,19 +61,19 @@ const MobileNavBar = () => {
             {/* Navigation Links */}
             <ul className="flex flex-col gap-y-4 text-lg font-medium pl-4">
               <li onClick={toggleMenu}>
-                <Link href="#ice-cream">Ice Cream</Link>
+                <Link href="#ice-cream">{menuText[language][0]}</Link>
               </li>
               <li onClick={toggleMenu}>
-                <Link href="#popsicles">Popsicles</Link>
+                <Link href="#popsicles">{menuText[language][1]}</Link>
               </li>
               <li onClick={toggleMenu}>
-                <Link href="#snacks">Snacks</Link>
+                <Link href="#snacks">{menuText[language][2]}</Link>
               </li>
               <li onClick={toggleMenu}>
-                <Link href="#drinks">Drinks</Link>
+                <Link href="#drinks">{menuText[language][3]}</Link>
               </li>
               <li onClick={toggleMenu}>
-                <Link href="#hours-location">Hours & Location</Link>
+                <Link href="#hours-location">{menuText[language][4]}</Link>
               </li>
             </ul>
 
