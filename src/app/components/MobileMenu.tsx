@@ -10,28 +10,32 @@ const MobileMenu = () => {
         categoryTitle="Ice Cream"
         categoryDescription="This is the description of the ice cream at the store."
         foodItems={iceCreamData}
-        classes="text-neon-pink pink-neon-glow" />
+        classes="text-neon-pink pink-neon-glow"
+        swiperClass="ice-cream-swiper" />
 
       <FoodSwiper id="popsicles"
         imgSrc="/icons/popsicle.svg"
         categoryTitle="Popsicles"
         categoryDescription="This is the description of the popsicles at the store."
         foodItems={popsiclesData}
-        classes="text-neon-turquoise turquoise-neon-glow" />
+        classes="text-neon-turquoise turquoise-neon-glow" 
+        swiperClass="popsicles-swiper"/>
 
       <FoodSwiper id="snacks"
         imgSrc="/icons/snack.svg"
         categoryTitle="Snacks"
         categoryDescription="This is the description of the snacks at the store."
         foodItems={snacksData}
-        classes="text-neon-orange orange-neon-glow" />
+        classes="text-neon-orange orange-neon-glow"
+        swiperClass="snacks-swiper" />
 
       <FoodSwiper id="drinks"
         imgSrc="/icons/drinks.svg"
         categoryTitle="Drinks"
         categoryDescription="This is the description of the drinks at the store."
         foodItems={drinksData}
-        classes="text-neon-green green-neon-glow" />
+        classes="text-neon-green green-neon-glow"
+        swiperClass="drinks-swiper" />
         
       {/* <div className="relative">
       <div className="absolute right-0 top-20 z-[-1] opacity-40">
