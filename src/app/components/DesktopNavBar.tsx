@@ -5,27 +5,11 @@ import Link from "next/link";
 import Toggle from "./Toggle";
 import useScrolled from "../hooks/useScrolled";
 import useStore from "../store";
+import { menuText } from "../translations/navbar";
 
 const DesktopNavBar = () => {
   const scrolled = useScrolled();
   const { language } = useStore() as { language: 'en' | 'es' };
-
-  const menuText = {
-    "en": [
-      "Ice Cream",
-      "Popsicles",
-      "Snacks",
-      "Drinks",
-      "Hours & Location",
-    ],
-    "es": [
-      "Helado",
-      "Paletas",
-      "Bocadillos",
-      "Bebidas",
-      "Horario y Ubicación",
-    ],
-  };
 
   return (
     <nav
