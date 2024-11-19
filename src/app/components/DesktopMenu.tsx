@@ -23,12 +23,12 @@ const DesktopMenu = () => {
       <div className="pb-10">
         <FoodCategory
           id="popsicles"
-          neonBar="/neon-bars/turquoise-neon-vertical2.svg"
+          neonBar="/neon-bars/blue-neon-vertical.svg"
           imgSrc="/icons/popsicle.svg"
           categoryTitle="Popsicles"
           categoryDescription="This is the description of the popsicles at the store."
           foodItems={popsiclesData}
-          classes="text-neon-turquoise turquoise-neon-glow"
+          classes="text-neon-blue blue-neon-glow"
         />
       </div>
     </div>

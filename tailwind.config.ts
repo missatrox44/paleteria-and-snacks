@@ -18,6 +18,7 @@ export default {
         'neon-turquoise': '#00FFE0',
         'neon-orange': '#FF9100',
         'neon-green': '#76FF03',
+        'neon-blue': '#007BFF',
         'card-gr-top': '#0F0F0F',
         'card-gr-middle': '#242424',
         'card-gr-bottom': '#222222',
