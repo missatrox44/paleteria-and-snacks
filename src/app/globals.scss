@@ -15,10 +15,10 @@
   --lightest-black: #1E1E1E;
   --grey: #7A7A7B;
   --light-purple: #844AEA;
-  --neon-pink: '#FF00F5',
-    --neon-turquoise: '#00FFE0',
-    --neon-orange: '#FF9100',
-    --neon-green: '#76FF03',
+  --neon-pink: #FF00F5;
+  --neon-turquoise: #00FFE0;
+  --neon-orange: #FF9100;
+  --neon-green: #76FF03;
 }
 
 body {
@@ -94,17 +94,47 @@ body {
 }
 
 // Menu Icons Styles
+// Mixin should be outside .menu-icon
+@mixin hover-color($color) {
+  &:hover {
+     p {
+      color: $color;
+    }
+  }
+}
+
 .menu-icon {
   transition: transform 0.3s;
 
   &:hover {
-    transform: scale(1.1);
-
-    p {
-      color: var(--light-purple);
-    }
+    transform: scale(1.2);
   }
 }
+
+// Individual menu items
+.ice-cream {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-pink));
+}
+
+.popsicles {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-turquoise));
+}
+
+.snacks {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-orange));
+}
+
+.drinks {
+  @extend .menu-icon;
+  @include hover-color(var(--neon-green));
+}
+
+
+
+
 
 .pink-neon-glow {
   position: relative;
@@ -338,6 +368,6 @@ body {
 }
 
 .swiper-pagination-progressbar-fill {
-  background-color: var(--light-purple) !important; 
-  height: 4px !important; 
+  background-color: var(--light-purple) !important;
+  height: 4px !important;
 }
