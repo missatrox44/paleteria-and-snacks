@@ -17,6 +17,7 @@ interface FoodSwiperProps {
   foodItems: FoodItem[];
   classes: string;
   swiperClass: string;
+  language: "en" | "es";
 }
 
 const FoodSwiper: React.FC<FoodSwiperProps> = ({
@@ -26,7 +27,8 @@ const FoodSwiper: React.FC<FoodSwiperProps> = ({
   categoryDescription,
   foodItems,
   classes = "",
-  swiperClass = "" }) => {
+  swiperClass = "",
+  language }) => {
   if (!foodItems || foodItems.length === 0) {
     return <div>No food items available</div>;
   }
@@ -41,11 +43,11 @@ const FoodSwiper: React.FC<FoodSwiperProps> = ({
         <p className="text-lg md:text-3xl pt-3">{categoryDescription}</p>
       </div>
       <Swiper
-        className={classNames("custom-swiper", swiperClass)} 
-        modules={[ Navigation, Pagination]} 
+        className={classNames("custom-swiper", swiperClass)}
+        modules={[Navigation, Pagination]}
         // spaceBetween={40}
         slidesPerView={1.5}
-        centeredSlides={true} 
+        centeredSlides={true}
         navigation
         pagination={{
           type: "progressbar",
@@ -53,7 +55,7 @@ const FoodSwiper: React.FC<FoodSwiperProps> = ({
       >
         {foodItems.map((item, index) => (
           <SwiperSlide key={index}>
-            <FoodCard foodItems={[item]} />
+            <FoodCard foodItems={[item]} language={language} />
           </SwiperSlide>
         ))}
       </Swiper>

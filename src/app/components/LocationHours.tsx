@@ -1,7 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import useStore from "../store";
+import { contactText } from "../translations/contact";
 
 const LocationHours = () => {
+  const { language } = useStore() as { language: 'en' | 'es' };
+
   return (
     <section id="hours-location" className="relative">
       <div className="absolute right-0 top-0 z-[-1] opacity-40">
@@ -9,7 +15,7 @@ const LocationHours = () => {
       </div>
       <div className="wrapper grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
         <div className="col-span-2 md:col-span-4 flex justify-center">
-          <h2 className="font-pacifico text-4xl md:text-6xl">Hours & Location</h2>
+          <h2 className="font-pacifico text-4xl md:text-6xl">{contactText[language][0]}</h2>
         </div>
         <div className="col-span-2 order-2 md:order-1">
           <div className="map-container">
@@ -27,8 +33,8 @@ const LocationHours = () => {
             <div className="flex gap-x-4 items-center">
               <Image src="/icons/clock.svg" alt="Clock Icon" width={32} height={32} />
               <p className="body-copy">
-                Sunday - Thursday: 1pm - 9pm <br />
-                Friday - Saturday: 1pm - 10pm
+              {contactText[language][1]}<br />
+              {contactText[language][2]}
               </p>
             </div>
             <div className="flex gap-x-4 items-center">
