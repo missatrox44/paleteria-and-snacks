@@ -58,15 +58,20 @@ const DesktopMenu = () => {
         <Image src="/bg-icons/popcorn.svg" alt="popcorn icon" width={500} height={500} />
       </div>
       <div className="pb-10">
-        {/* <FoodCategory
+        <FoodCategory
           id="snacks"
           neonBar="/neon-bars/orange-neon-vertical2.svg"
           imgSrc="/icons/snack.svg"
-          categoryTitle="Snacks"
-          categoryDescription="This is the description of the snacks at the store."
+          categoryTitle={language === "en" ? "Snacks" : "Bocadillos"}
+          categoryDescription={
+            language === "en"
+              ? "This is the description of the snacks at the store."
+              : "Esta es la descripción del bocadillos en la tienda."
+          }
           foodItems={snacksData}
           classes="text-neon-orange orange-neon-glow"
-        /> */}
+          language={language}
+        />
       </div>
     </div>
     <div className="relative">
