@@ -38,8 +38,8 @@ const Toggle = () => {
       </div>
 
       <p className="text-sm font-bold">
-        <span className={isEnglish ? "text-[#FF7F3F]" : ""}>EN</span>/
-        <span className={!isEnglish ? "text-[#844AEA]" : ""}>ES</span>
+        <span className={isEnglish ? "text-[#FF7F3F]" : "text-[#844AEA]"}>EN/ES</span>
+        {/* <span className={!isEnglish ? "text-[#844AEA]" : ""}>ES</span> */}
       </p>
 
     </div>
