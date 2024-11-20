@@ -95,32 +95,78 @@ export const iceCreamData = [
 ];
 
 
+// export const popsiclesData = [
+//   {
+//     "name": "Cream Base",
+//     "image": "/temp/popsicles/cream.png",
+//     "alt": "Cream popsicle",
+//     "price": 3.99,
+//     "variations": [],
+//     "featured": false
+//   },
+//   {
+//     "name": "Water Based",
+//     "image": "/temp/popsicles/water.png",
+//     "alt": "Water popsicle",
+//     "price": 2.99,
+//     "variations": [],
+//     "featured": false
+//   },
+//   {
+//     "name": "Dipped in Chocolate",
+//     "image": "/temp/popsicles/chocolate.png",
+//     "alt": "Chocolate popsicle",
+//     "price": 7.75,
+//     "variations": [],
+//     "featured": true
+//   }
+// ];
+
 export const popsiclesData = [
   {
-    "name": "Cream Base",
-    "image": "/temp/popsicles/cream.png",
-    "alt": "Cream popsicle",
-    "price": 3.99,
-    "variations": [],
-    "featured": false
+    name: {
+      en: "Cream Base",
+      es: "Base de Crema",
+    },
+    image: "/temp/popsicles/cream.png",
+    alt: {
+      en: "Cream popsicle",
+      es: "Paleta de crema",
+    },
+    price: 3.99,
+    variations: [], // No variations for this item
+    featured: false,
   },
   {
-    "name": "Water Based",
-    "image": "/temp/popsicles/water.png",
-    "alt": "Water popsicle",
-    "price": 2.99,
-    "variations": [],
-    "featured": false
+    name: {
+      en: "Water Base",
+      es: "Base de Agua",
+    },
+    image: "/temp/popsicles/water.png",
+    alt: {
+      en: "Water popsicle",
+      es: "Paleta de agua",
+    },
+    price: 2.99,
+    variations: [], // No variations for this item
+    featured: false,
   },
   {
-    "name": "Dipped in Chocolate",
-    "image": "/temp/popsicles/chocolate.png",
-    "alt": "Chocolate popsicle",
-    "price": 7.75,
-    "variations": [],
-    "featured": true
-  }
+    name: {
+      en: "Dipped in Chocolate",
+      es: "Cubierta de Chocolate",
+    },
+    image: "/temp/popsicles/chocolate.png",
+    alt: {
+      en: "Chocolate popsicle",
+      es: "Paleta de chocolate",
+    },
+    price: 7.75,
+    variations: [], // No variations for this item
+    featured: true,
+  },
 ];
+
 
 export const snacksData = [
   {

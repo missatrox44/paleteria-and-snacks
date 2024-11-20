@@ -23,7 +23,7 @@ const FoodCard: React.FC<FoodCardProps> = ({ foodItems, language }) => {
                 <div className="flex flex-col items-center">
                   <ul className="text-lg md:text-xl font-extrabold">
                     {item.price !== null ? (
-                      <li>${item.price.toFixed(2)} each</li>
+                      <li>${item.price.toFixed(2)} {language === "en" ? "each" : "cada uno"}</li>
                     ) : (
                       item.variations?.map((variation, varIndex) => (
                         <li key={varIndex}>

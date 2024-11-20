@@ -10,41 +10,47 @@ const DesktopMenu = () => {
   const { language } = useStore() as { language: 'en' | 'es' };
 
   return (
-  <>
-    <div className="relative">
-      <div className="absolute right-0 top-20 z-[-1] opacity-40">
-        <Image src="/bg-icons/agua.svg" alt="agua fresca icon" width={550} height={550} />
-      </div>
-      <div className="pb-10">
+    <>
+      <div className="relative">
+        <div className="absolute right-0 top-20 z-[-1] opacity-40">
+          <Image src="/bg-icons/agua.svg" alt="agua fresca icon" width={550} height={550} />
+        </div>
+        <div className="pb-10">
 
-      <FoodCategory
-        id="ice-cream"
-        neonBar="/neon-bars/pink-neon-vertical2.svg"
-        imgSrc="/icons/ice-cream.svg"
-        categoryTitle={language === "en" ? "Ice Cream" : "Helado"}
-        categoryDescription={
-          language === "en"
-            ? "This is the description of the ice cream at the store."
-            : "Esta es la descripción del helado en la tienda."
-        }
-        foodItems={iceCreamData}
-        classes="text-neon-pink pink-neon-glow"
-        language={language}
-      />
-      </div>
-      {/* <div className="pb-10">
-        <FoodCategory
-          id="popsicles"
-          neonBar="/neon-bars/blue-neon-vertical.svg"
-          imgSrc="/icons/popsicle.svg"
-          categoryTitle="Popsicles"
-          categoryDescription="This is the description of the popsicles at the store."
-          foodItems={popsiclesData}
-          classes="text-neon-blue blue-neon-glow"
-        />
-      </div>
-    </div>
-    <div className="relative">
+          <FoodCategory
+            id="ice-cream"
+            neonBar="/neon-bars/pink-neon-vertical2.svg"
+            imgSrc="/icons/ice-cream.svg"
+            categoryTitle={language === "en" ? "Ice Cream" : "Helado"}
+            categoryDescription={
+              language === "en"
+                ? "This is the description of the ice cream at the store."
+                : "Esta es la descripción del helado en la tienda."
+            }
+            foodItems={iceCreamData}
+            classes="text-neon-pink pink-neon-glow"
+            language={language}
+          />
+        </div>
+
+        <div className="pb-10">
+          <FoodCategory
+            id="popsicles"
+            neonBar="/neon-bars/blue-neon-vertical.svg"
+            imgSrc="/icons/popsicle.svg"
+            categoryTitle={language === "en" ? "Popsicles" : "Paletas"}
+            categoryDescription={
+              language === "en"
+                ? "This is the description of the popsicles at the store."
+                : "Esta es la descripción del paletas en la tienda."
+            }
+            foodItems={popsiclesData}
+            classes="text-neon-blue blue-neon-glow"
+            language={language}
+          />
+        </div>
+   
+      {/* <div className="relative">
       <div className="absolute right-0 bottom-0 z-[-1] opacity-40">
         <Image src="/bg-icons/nachos.svg" alt="nachos icon" width={750} height={750} />
       </div>
@@ -78,7 +84,7 @@ const DesktopMenu = () => {
           classes="text-neon-green green-neon-glow"
         />
       </div> */}
-    </div>
+    </div >
   </>
   );
 };
