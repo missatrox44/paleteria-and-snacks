@@ -22,7 +22,7 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
   categoryDescription,
   foodItems,
   classes = "",
-language }) => {
+  language }) => {
 
   return (
     <section id={id} className="wrapper py-10 relative">

@@ -1,42 +1,66 @@
-// import Image from "next/image";
-// import { FoodCategory } from "@/app/components";
+"use client";
+
 import { iceCreamData, popsiclesData, snacksData, drinksData } from "../data/foodData";
 import FoodSwiper from "./FoodSwiper";
+import useStore from "../store";
+
 const MobileMenu = () => {
+  const { language } = useStore() as { language: 'en' | 'es' };
+
   return (
     <>
       <FoodSwiper id="ice-cream"
         imgSrc="/icons/ice-cream.svg"
-        categoryTitle="Ice Cream"
-        categoryDescription="This is the description of the ice cream at the store."
+        categoryTitle={language === "en" ? "Ice Cream" : "Helado"}
+        categoryDescription={
+          language === "en"
+            ? "This is the description of the ice cream at the store."
+            : "Esta es la descripción del helado en la tienda."
+        }
         foodItems={iceCreamData}
         classes="text-neon-pink pink-neon-glow"
-        swiperClass="ice-cream-swiper" />
+        swiperClass="ice-cream-swiper"
+        language={language} />
 
       <FoodSwiper id="popsicles"
         imgSrc="/icons/popsicle.svg"
-        categoryTitle="Popsicles"
-        categoryDescription="This is the description of the popsicles at the store."
+        categoryTitle={language === "en" ? "Popsicles" : "Paletas"}
+        categoryDescription={
+          language === "en"
+            ? "This is the description of the popsicles at the store."
+            : "Esta es la descripción del paletas en la tienda."
+        }
         foodItems={popsiclesData}
-        classes="text-neon-blue blue-neon-glow" 
-        swiperClass="popsicles-swiper"/>
+        classes="text-neon-blue blue-neon-glow"
+        swiperClass="popsicles-swiper"
+        language={language} />
 
       <FoodSwiper id="snacks"
         imgSrc="/icons/snack.svg"
-        categoryTitle="Snacks"
-        categoryDescription="This is the description of the snacks at the store."
+        categoryTitle={language === "en" ? "Snacks" : "Bocadillos"}
+        categoryDescription={
+          language === "en"
+            ? "This is the description of the snacks at the store."
+            : "Esta es la descripción del bocadillos en la tienda."
+        }
         foodItems={snacksData}
         classes="text-neon-orange orange-neon-glow"
-        swiperClass="snacks-swiper" />
+        swiperClass="snacks-swiper"
+        language={language} />
 
       <FoodSwiper id="drinks"
         imgSrc="/icons/drinks.svg"
-        categoryTitle="Drinks"
-        categoryDescription="This is the description of the drinks at the store."
+        categoryTitle={language === "en" ? "Drinks" : "Bebidas"}
+        categoryDescription={
+          language === "en"
+            ? "This is the description of the drinks at the store."
+            : "Esta es la descripción del bebidas en la tienda."
+        }
         foodItems={drinksData}
         classes="text-neon-green green-neon-glow"
-        swiperClass="drinks-swiper" />
-        
+        swiperClass="drinks-swiper"
+        language={language} />
+
       {/* <div className="relative">
       <div className="absolute right-0 top-20 z-[-1] opacity-40">
         <Image src="/bg-icons/agua.svg" alt="agua fresca icon" width={550} height={550} />
