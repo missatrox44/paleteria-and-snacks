@@ -1,7 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import { FoodCategory } from "@/app/components";
 import { iceCreamData, popsiclesData, snacksData, drinksData } from "../data/foodData";
+
+import useStore from "../store";
+
 const DesktopMenu = () => {
+  const { language } = useStore() as { language: 'en' | 'es' };
+
   return (
   <>
     <div className="relative">
@@ -10,17 +17,22 @@ const DesktopMenu = () => {
       </div>
       <div className="pb-10">
 
-        <FoodCategory
-          id="ice-cream"
-          neonBar="/neon-bars/pink-neon-vertical2.svg"
-          imgSrc="/icons/ice-cream.svg"
-          categoryTitle="Ice Cream"
-          categoryDescription="This is the description of the ice cream at the store."
-          foodItems={iceCreamData}
-          classes="text-neon-pink pink-neon-glow"
-        />
+      <FoodCategory
+        id="ice-cream"
+        neonBar="/neon-bars/pink-neon-vertical2.svg"
+        imgSrc="/icons/ice-cream.svg"
+        categoryTitle={language === "en" ? "Ice Cream" : "Helado"}
+        categoryDescription={
+          language === "en"
+            ? "This is the description of the ice cream at the store."
+            : "Esta es la descripción del helado en la tienda."
+        }
+        foodItems={iceCreamData}
+        classes="text-neon-pink pink-neon-glow"
+        language={language}
+      />
       </div>
-      <div className="pb-10">
+      {/* <div className="pb-10">
         <FoodCategory
           id="popsicles"
           neonBar="/neon-bars/blue-neon-vertical.svg"
@@ -65,7 +77,7 @@ const DesktopMenu = () => {
           foodItems={drinksData}
           classes="text-neon-green green-neon-glow"
         />
-      </div>
+      </div> */}
     </div>
   </>
   );

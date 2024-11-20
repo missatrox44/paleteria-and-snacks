@@ -12,6 +12,7 @@ interface FoodCategoryProps {
   categoryDescription: string;
   foodItems: FoodItem[];
   classes: string;
+  language: "en" | "es";
 }
 const FoodCategory: React.FC<FoodCategoryProps> = ({
   id = "",
@@ -20,7 +21,8 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
   categoryTitle,
   categoryDescription,
   foodItems,
-  classes = "" }) => {
+  classes = "",
+language }) => {
 
   return (
     <section id={id} className="wrapper py-10 relative">
@@ -40,7 +42,7 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
         </div>
         <p className="text-xl pt-3">{categoryDescription}</p>
       </div>
-      <FoodCard foodItems={foodItems} />
+      <FoodCard foodItems={foodItems} language={language} />
 
     </section>
   );

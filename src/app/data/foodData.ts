@@ -1,41 +1,99 @@
+// export const iceCreamData = [
+//   {
+//     "name": "Cup",
+//     "image": "/temp/ice-cream/cup.png",
+//     "alt": "Ice Cream cup",
+//     "price": null,
+//     "variations": [
+//       { "name": "1 scoop", "price": 3.75 },
+//       { "name": "2 scoops", "price": 4.75 },
+//       { "name": "3 scoops", "price": 5.75 }
+//     ],
+//     "featured": false
+//   },
+//   {
+//     "name": "Cone",
+//     "image": "/temp/ice-cream/cone.png",
+//     "alt": "Ice Cream cone",
+//     "price": null,
+//     "variations": [
+//       { "name": "1 scoop", "price": 4.75 },
+//       { "name": "2 scoops", "price": 5.75 },
+//       { "name": "3 scoops", "price": 6.75 }
+//     ],
+//     "featured": false
+//   },
+//   {
+//     "name": "Waffle Bowl",
+//     "image": "/temp/ice-cream/waffle-bowl.png",
+//     "alt": "Ice Cream waffle bowl",
+//     "price": null,
+//     "variations": [
+//       { "name": "1 scoop", "price": 5.75 },
+//       { "name": "2 scoops", "price": 6.75 },
+//       { "name": "3 scoops", "price": 7.75 }
+//     ],
+//     "featured": true
+//   },
+// ];
+
 export const iceCreamData = [
   {
-    "name": "Cup",
-    "image": "/temp/ice-cream/cup.png",
-    "alt": "Ice Cream cup",
-    "price": null,
-    "variations": [
-      { "name": "1 scoop", "price": 3.75 },
-      { "name": "2 scoops", "price": 4.75 },
-      { "name": "3 scoops", "price": 5.75 }
+    name: {
+      en: "Cup",
+      es: "Taza",
+    },
+    image: "/temp/ice-cream/cup.png",
+    alt: {
+      en: "Ice Cream cup",
+      es: "Taza de helado",
+    },
+    price: null,
+    variations: [
+      { name: { en: "1 scoop", es: "1 bola" }, price: 3.75 },
+      { name: { en: "2 scoops", es: "2 bolas" }, price: 4.75 },
+      { name: { en: "3 scoops", es: "3 bolas" }, price: 5.75 },
     ],
-    "featured": false
+    featured: false,
   },
   {
-    "name": "Cone",
-    "image": "/temp/ice-cream/cone.png",
-    "alt": "Ice Cream cone",
-    "price": null,
-    "variations": [
-      { "name": "1 scoop", "price": 4.75 },
-      { "name": "2 scoops", "price": 5.75 },
-      { "name": "3 scoops", "price": 6.75 }
+    name: {
+      en: "Cone",
+      es: "Cono",
+    },
+    image: "/temp/ice-cream/cone.png",
+    alt: {
+      en: "Ice Cream cone",
+      es: "Cono de helado",
+    },
+    price: null,
+    variations: [
+      { name: { en: "1 scoop", es: "1 bola" }, price: 4.75 },
+      { name: { en: "2 scoops", es: "2 bolas" }, price: 5.75 },
+      { name: { en: "3 scoops", es: "3 bolas" }, price: 6.75 },
     ],
-    "featured": false
+    featured: false,
   },
   {
-    "name": "Waffle Bowl",
-    "image": "/temp/ice-cream/waffle-bowl.png",
-    "alt": "Ice Cream waffle bowl",
-    "price": null,
-    "variations": [
-      { "name": "1 scoop", "price": 5.75 },
-      { "name": "2 scoops", "price": 6.75 },
-      { "name": "3 scoops", "price": 7.75 }
+    name: {
+      en: "Waffle Bowl",
+      es: "Tazón de waffle",
+    },
+    image: "/temp/ice-cream/waffle-bowl.png",
+    alt: {
+      en: "Ice Cream waffle bowl",
+      es: "Tazón de waffle con helado",
+    },
+    price: null,
+    variations: [
+      { name: { en: "1 scoop", es: "1 bola" }, price: 5.75 },
+      { name: { en: "2 scoops", es: "2 bolas" }, price: 6.75 },
+      { name: { en: "3 scoops", es: "3 bolas" }, price: 7.75 },
     ],
-    "featured": true
+    featured: true,
   },
 ];
+
 
 export const popsiclesData = [
   {
