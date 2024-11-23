@@ -22,6 +22,10 @@
   --neon-blue: #007BFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--white);
   background: var(--main-background);
