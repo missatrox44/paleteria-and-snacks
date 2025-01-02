@@ -156,7 +156,7 @@ export const popsiclesData = [
       en: "Dipped in Chocolate",
       es: "Cubierta de Chocolate",
     },
-    image: "/temp/popsicles/chocolate.png",
+    image: "/food/popsicles/chocolate.png",
     alt: {
       en: "Chocolate popsicle",
       es: "Paleta de chocolate",
