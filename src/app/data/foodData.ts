@@ -43,7 +43,7 @@ export const iceCreamData = [
       en: "Cup",
       es: "Taza",
     },
-    image: "/temp/ice-cream/cup.png",
+    image: "/food/ice-cream/ice-cream-cup.png",
     alt: {
       en: "Ice Cream cup",
       es: "Taza de helado",
@@ -80,6 +80,24 @@ export const iceCreamData = [
       es: "Tazón de waffle",
     },
     image: "/temp/ice-cream/waffle-bowl.png",
+    alt: {
+      en: "Ice Cream waffle bowl",
+      es: "Tazón de waffle con helado",
+    },
+    price: null,
+    variations: [
+      { name: { en: "1 scoop", es: "1 bola" }, price: 5.75 },
+      { name: { en: "2 scoops", es: "2 bolas" }, price: 6.75 },
+      { name: { en: "3 scoops", es: "3 bolas" }, price: 7.75 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "New Ice Cream",
+      es: "Helado Nuevo",
+    },
+    image: "/food/ice-cream/new-ice-cream.png",
     alt: {
       en: "Ice Cream waffle bowl",
       es: "Tazón de waffle con helado",
