@@ -571,7 +571,24 @@ export const drinksData = [
       en: "Aguas Frescas",
       es: "Aguas Frescas",
     },
-    image: "/temp/drinks/agua-fresca.png",
+    image: "/food/drinks/agua-fresca.png",
+    alt: {
+      en: "Aguas Frescas",
+      es: "Aguas Frescas",
+    },
+    price: null,
+    variations: [
+      { name: { en: "Medium", es: "Mediano" }, price: 4.99 },
+      { name: { en: "Large", es: "Grande" }, price: 5.99 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Aguas Frescas2",
+      es: "Aguas Frescas2",
+    },
+    image: "/food/drinks/agua-fresca-horchata.png",
     alt: {
       en: "Aguas Frescas",
       es: "Aguas Frescas",
@@ -605,7 +622,7 @@ export const drinksData = [
       en: "Mineral Water with Fruit",
       es: "Agua Mineral con Fruta",
     },
-    image: "/temp/drinks/mineralfruit.png",
+    image: "/food/drinks/mineral-water-with-fruit.png",
     alt: {
       en: "Mineral Water with Fruit",
       es: "Agua Mineral con Fruta",
@@ -622,7 +639,7 @@ export const drinksData = [
       en: "Clamato",
       es: "Clamato",
     },
-    image: "/temp/drinks/clamato.png",
+    image:"/food/drinks/clamato.png",
     alt: {
       en: "Clamato",
       es: "Clamato",
@@ -639,7 +656,24 @@ export const drinksData = [
       en: "Mango Smoothie",
       es: "Smoothie de Mango",
     },
-    image: "/temp/drinks/mineral_water.png",
+    image: "/food/drinks/mango-smoothie.png",
+    alt: {
+      en: "Mango Smoothie",
+      es: "Smoothie de Mango",
+    },
+    price: null,
+    variations: [
+      { name: { en: "Medium", es: "Mediano" }, price: 4.99 },
+      { name: { en: "Large", es: "Grande" }, price: 6.99 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Mango Smoothie2",
+      es: "Smoothie de Mango2",
+    },
+    image: "/food/drinks/mango-smoothie2.png",
     alt: {
       en: "Mango Smoothie",
       es: "Smoothie de Mango",
@@ -656,7 +690,7 @@ export const drinksData = [
       en: "Red Drink",
       es: "Bebida Roja",
     },
-    image: "/temp/drinks/clamato.png",
+    image: "/food/drinks/red-drink.png",
     alt: {
       en: "Red Drink",
       es: "Bebida Roja",
@@ -675,7 +709,7 @@ export const drinksData = [
       en: "Mexican Sodas",
       es: "Refrescos Mexicanos",
     },
-    image: "/temp/drinks/mineral_water.png",
+    image: "/food/drinks/soda.png",
     alt: {
       en: "Mexican Sodas",
       es: "Refrescos Mexicanos",
