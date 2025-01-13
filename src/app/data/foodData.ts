@@ -43,7 +43,7 @@ export const iceCreamData = [
       en: "Cup",
       es: "Taza",
     },
-    image: "/temp/ice-cream/cup.png",
+    image: "/food/ice-cream/ice-cream-cup.png",
     alt: {
       en: "Ice Cream cup",
       es: "Taza de helado",
@@ -80,6 +80,24 @@ export const iceCreamData = [
       es: "Tazón de waffle",
     },
     image: "/temp/ice-cream/waffle-bowl.png",
+    alt: {
+      en: "Ice Cream waffle bowl",
+      es: "Tazón de waffle con helado",
+    },
+    price: null,
+    variations: [
+      { name: { en: "1 scoop", es: "1 bola" }, price: 5.75 },
+      { name: { en: "2 scoops", es: "2 bolas" }, price: 6.75 },
+      { name: { en: "3 scoops", es: "3 bolas" }, price: 7.75 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "New Ice Cream",
+      es: "Helado Nuevo",
+    },
+    image: "/food/ice-cream/new-ice-cream.png",
     alt: {
       en: "Ice Cream waffle bowl",
       es: "Tazón de waffle con helado",
@@ -156,7 +174,7 @@ export const popsiclesData = [
       en: "Dipped in Chocolate",
       es: "Cubierta de Chocolate",
     },
-    image: "/temp/popsicles/chocolate.png",
+    image: "/food/popsicles/chocolate.png",
     alt: {
       en: "Chocolate popsicle",
       es: "Paleta de chocolate",
@@ -308,7 +326,7 @@ export const snacksData = [
       en: "Mini Pancakes",
       es: "Mini Panqueques",
     },
-    image: "/temp/snacks/minipancakes.png",
+    image: "/food/snacks/mini-pancakes.png",
     alt: {
       en: "Mini pancakes",
       es: "Mini panqueques",
@@ -325,7 +343,25 @@ export const snacksData = [
       en: "Corn in a Cup",
       es: "Elote en Vaso",
     },
-    image: "/temp/snacks/elote.png",
+    image: "/food/snacks/corn-in-cup.png",
+    alt: {
+      en: "Corn in a cup",
+      es: "Elote en vaso",
+    },
+    price: null,
+    variations: [
+      { name: { en: "Medium", es: "Mediano" }, price: 7.50 },
+      { name: { en: "Large", es: "Grande" }, price: 8.99 },
+      { name: { en: "Whole Corn", es: "Elote Entero" }, price: 5.99 },
+    ],
+    featured: false,
+  },
+  {
+    name: {
+      en: "Corn in a Cup2",
+      es: "Elote en Vaso2",
+    },
+    image: "/food/snacks/corn-in-cup2.png",
     alt: {
       en: "Corn in a cup",
       es: "Elote en vaso",
@@ -343,7 +379,7 @@ export const snacksData = [
       en: "Strawberries and Cream",
       es: "Fresas con Crema",
     },
-    image: "/temp/snacks/strawberriesncream.png",
+    image: "/food/snacks/strawberries-and-cream.png",
     alt: {
       en: "Strawberries and cream",
       es: "Fresas con crema",
@@ -385,7 +421,7 @@ export const snacksData = [
       en: "Fruit Cup",
       es: "Copa de Frutas",
     },
-    image: "/temp/snacks/fruit_cup.png",
+    image: "/food/snacks/fruit-in-cup.png",
     alt: {
       en: "Fruit cup",
       es: "Copa de frutas",
@@ -399,7 +435,26 @@ export const snacksData = [
       en: "Dorinachos",
       es: "Dorinachos",
     },
-    image: "/temp/snacks/dorinachos.png",
+    image: "/food/snacks/dorinachos.png",
+    alt: {
+      en: "Dorinachos",
+      es: "Dorinachos",
+    },
+    price: null,
+    variations: [
+      { name: { en: "Medium cheese only", es: "Mediano solo queso" }, price: 4.99 },
+      { name: { en: "Medium cheese & corn", es: "Mediano queso y elote" }, price: 5.99 },
+      { name: { en: "Large cheese only", es: "Grande solo queso" }, price: 5.99 },
+      { name: { en: "Large cheese & corn", es: "Grande queso y elote" }, price: 7.99 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Dorinachos2",
+      es: "Dorinachos2",
+    },
+    image: "/food/snacks/dorinachos2.png",
     alt: {
       en: "Dorinachos",
       es: "Dorinachos",
@@ -418,7 +473,7 @@ export const snacksData = [
       en: "Pepihuates",
       es: "Pepihuates",
     },
-    image: "/temp/snacks/pepihuates.png",
+    image: "/food/snacks/pepihuates.png",
     alt: {
       en: "Pepihuates",
       es: "Pepihuates",
@@ -446,7 +501,24 @@ export const snacksData = [
       en: "Maruchan",
       es: "Maruchan",
     },
-    image: "/temp/snacks/maruchan.png",
+    image: "/food/snacks/maruchan.png",
+    alt: {
+      en: "Maruchan",
+      es: "Maruchan",
+    },
+    price: null,
+    variations: [
+      { name: { en: "Simple", es: "Sencilla" }, price: 3.99 },
+      { name: { en: "Loaded", es: "Chorreada" }, price: 8.99 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Maruchan2",
+      es: "Maruchan2",
+    },
+    image: "/food/snacks/maruchan2.png",
     alt: {
       en: "Maruchan",
       es: "Maruchan",
@@ -480,7 +552,7 @@ export const snacksData = [
       en: "Chilindrina",
       es: "Chilindrina",
     },
-    image: "/temp/snacks/chilidrina.png",
+    image: "/food/snacks/chilindrina.png",
     alt: {
       en: "Chilindrina",
       es: "Chilindrina",
@@ -494,7 +566,7 @@ export const snacksData = [
       en: "Hot Cheetos with Cheese",
       es: "Hot Cheetos con Queso",
     },
-    image: "/temp/snacks/hotcheetos.png",
+    image: "/food/snacks/hot-cheetos.png",
     alt: {
       en: "Hot Cheetos with cheese",
       es: "Hot Cheetos con queso",
@@ -536,10 +608,52 @@ export const snacksData = [
       en: "Banana Split",
       es: "Banana Split",
     },
-    image: "/temp/snacks/bananasplit.png",
+    image: "/food/snacks/banana-split.png",
     alt: {
       en: "Banana split",
       es: "Banana split",
+    },
+    price: 7.75,
+    variations: [],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Nachos",
+      es: "Nachos",
+    },
+    image: "/food/snacks/nachos.png",
+    alt: {
+      en: "nachos",
+      es: "nachos",
+    },
+    price: 7.75,
+    variations: [],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Strawberry Waffles",
+      es: "Waffles de fresa",
+    },
+    image: "/food/snacks/strawberries_waffles.png",
+    alt: {
+      en: "Strawberry Waffles",
+      es: "Waffles de fresa",
+    },
+    price: 7.75,
+    variations: [],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Banana Waffles",
+      es: "Waffles de plátano",
+    },
+    image: "/food/snacks/waffles.png",
+    alt: {
+      en: "Banana Waffles",
+      es: "Waffles de plátano",
     },
     price: 7.75,
     variations: [],
@@ -553,7 +667,24 @@ export const drinksData = [
       en: "Aguas Frescas",
       es: "Aguas Frescas",
     },
-    image: "/temp/drinks/agua-fresca.png",
+    image: "/food/drinks/agua-fresca.png",
+    alt: {
+      en: "Aguas Frescas",
+      es: "Aguas Frescas",
+    },
+    price: null,
+    variations: [
+      { name: { en: "Medium", es: "Mediano" }, price: 4.99 },
+      { name: { en: "Large", es: "Grande" }, price: 5.99 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Aguas Frescas2",
+      es: "Aguas Frescas2",
+    },
+    image: "/food/drinks/agua-fresca-horchata.png",
     alt: {
       en: "Aguas Frescas",
       es: "Aguas Frescas",
@@ -587,7 +718,7 @@ export const drinksData = [
       en: "Mineral Water with Fruit",
       es: "Agua Mineral con Fruta",
     },
-    image: "/temp/drinks/mineralfruit.png",
+    image: "/food/drinks/mineral-water-with-fruit.png",
     alt: {
       en: "Mineral Water with Fruit",
       es: "Agua Mineral con Fruta",
@@ -604,7 +735,7 @@ export const drinksData = [
       en: "Clamato",
       es: "Clamato",
     },
-    image: "/temp/drinks/clamato.png",
+    image:"/food/drinks/clamato.png",
     alt: {
       en: "Clamato",
       es: "Clamato",
@@ -621,7 +752,24 @@ export const drinksData = [
       en: "Mango Smoothie",
       es: "Smoothie de Mango",
     },
-    image: "/temp/drinks/mineral_water.png",
+    image: "/food/drinks/mango-smoothie.png",
+    alt: {
+      en: "Mango Smoothie",
+      es: "Smoothie de Mango",
+    },
+    price: null,
+    variations: [
+      { name: { en: "Medium", es: "Mediano" }, price: 4.99 },
+      { name: { en: "Large", es: "Grande" }, price: 6.99 },
+    ],
+    featured: true,
+  },
+  {
+    name: {
+      en: "Mango Smoothie2",
+      es: "Smoothie de Mango2",
+    },
+    image: "/food/drinks/mango-smoothie2.png",
     alt: {
       en: "Mango Smoothie",
       es: "Smoothie de Mango",
@@ -638,7 +786,7 @@ export const drinksData = [
       en: "Red Drink",
       es: "Bebida Roja",
     },
-    image: "/temp/drinks/clamato.png",
+    image: "/food/drinks/red-drink.png",
     alt: {
       en: "Red Drink",
       es: "Bebida Roja",
@@ -657,7 +805,7 @@ export const drinksData = [
       en: "Mexican Sodas",
       es: "Refrescos Mexicanos",
     },
-    image: "/temp/drinks/mineral_water.png",
+    image: "/food/drinks/soda.png",
     alt: {
       en: "Mexican Sodas",
       es: "Refrescos Mexicanos",

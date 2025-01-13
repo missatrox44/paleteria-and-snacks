@@ -11,7 +11,9 @@ const FoodCard: React.FC<FoodCardProps> = ({ foodItems, language }) => {
     <div className="flip-card-container">
       {foodItems.map((item: FoodItem, index: number) => (
         <div key={index} className="flip-card">
-          <div className="flip-card-inner w-full h-full">
+          <div className="flip-card-inner w-full h-full relative">
+            {item.featured &&
+              <Image height={35} width={35} src="/featured.svg" alt="featured" className="absolute top-4 right-4 z-10" />}
             <div className="flip-card-front card-base">
               <div className="flex flex-col gap-y-6 items-center">
                 <Image src={item.image} alt={item.alt?.[language]} width={125} height={125} />
