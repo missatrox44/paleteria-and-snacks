@@ -41,16 +41,16 @@ const LocationHours = () => {
             <div className="flex gap-x-4 items-center">
               <Image src="/icons/location-pin.svg" alt="Location Pin Icon" width={32} height={32} />
               <p className="body-copy">
-              980 87th Suite G <br/>
+              6900 Eastridge Rd <br/>
               Odessa, TX 79765</p>
             </div>
             <div className="flex gap-x-4 items-center">
               <Image src="/icons/phone.svg" alt="Telephone Icon" width={32} height={32} />
-              <Link href="tel:4324252437" className="body-copy hover-link">(432) 425-2437</Link>
+              <Link href="tel:11234567890" className="body-copy hover-link">(123) 456-7890</Link>
             </div>
             <div className="flex gap-x-4 items-center">
               <Image src="/icons/mail.svg" alt="Envelope Icon" width={32} height={32} />
-              <Link href="mailto:g_dvl@yahoo.com" className="body-copy hover-link">g_dvl@yahoo.com</Link>
+              <Link href="mailto:" className="body-copy hover-link">icream@paleteria.com</Link>
             </div>
           </div>
         </div>
