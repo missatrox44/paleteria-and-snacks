@@ -3,6 +3,8 @@
 A mobile-responsive landing page for a demo Paleteria & Snacks store, built with Next.js.
 This project showcases a bilingual landing experience (English/Spanish), interactive menu, and a playful design optimized for both desktop and mobile.
 
+## 🌐 Demo
+[DEMO LINK](https://kds-paleteria.vercel.app/)
 
 ⸻
 
