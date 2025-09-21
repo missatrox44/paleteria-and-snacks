@@ -25,7 +25,7 @@ const FoodCategory: React.FC<FoodCategoryProps> = ({
   language }) => {
 
   return (
-    <section id={id} className="wrapper py-10 relative">
+    <section id={id} className="wrapper py-10 relative   scroll-mt-[120px]">
       {/* vertical neon bar */}
       <div className="absolute -left-8 top-0 w-10 h-full hidden md:block">
         <Image

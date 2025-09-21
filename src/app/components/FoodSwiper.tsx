@@ -34,7 +34,7 @@ const FoodSwiper: React.FC<FoodSwiperProps> = ({
   }
 
   return (
-    <section id={id} className="wrapper py-8">
+    <section id={id} className="wrapper py-8 scroll-mt-[80px]">
       <div className="flex flex-col pb-8">
         <div className="flex items-center gap-x-4">
           <Image src={imgSrc} alt={`${categoryTitle} icon`} width={50} height={50} />
