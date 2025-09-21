@@ -9,7 +9,7 @@ const LocationHours = () => {
   const { language } = useStore() as { language: 'en' | 'es' };
 
   return (
-    <section id="hours-location" className="relative">
+    <section id="hours-location" className="relative scroll-mt-[120px]md:scroll-mt-[120px]">
       <div className="absolute right-0 top-0 z-[-1] opacity-40">
         <Image src="/bg-icons/pancake.svg" alt="Pancake icon" width={350} height={350} />
       </div>
@@ -20,12 +20,13 @@ const LocationHours = () => {
         <div className="col-span-2 order-2 md:order-1">
           <div className="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.967129321234!2d-102.40149482437178!3d31.934649774026973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbc7d16e91ac6f%3A0x369ae8444040c66d!2s980%20E%2087th%20St%20g%2C%20Odessa%2C%20TX%20797651318!5e0!3m2!1sen!2sus!4v1730574653746!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216787.84605841083!2d-102.58790711328132!3d31.898170999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbcf15cc83cd73%3A0xa493f52094164e70!2sBaskin-Robbins!5e0!3m2!1sen!2sus!4v1758416824187!5m2!1sen!2sus"
               style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+
           </div>
         </div>
         <div className="col-span-2 order-1 md:order-2 flex items-center">
