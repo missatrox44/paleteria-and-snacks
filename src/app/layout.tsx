@@ -19,8 +19,8 @@ const afacad = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "KD's Paleteria & Snacks",
-  description: "Mexican inspired ice cream flavors and snacks in Odessa, TX.",
+  title: "Paleteria & Snacks",
+  description: "Mexican inspired ice cream flavors and snacks.",
 };
 
 export default function RootLayout({

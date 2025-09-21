@@ -19,7 +19,7 @@ const DesktopNavBar = () => {
     >
       <div className="flex wrapper justify-between py-7 items-center">
         <div className="flex gap-x-6 items-center">
-          <Image src="/logo.png" alt="KD's Paleteria Logo" width={72} height={72} />
+          <Image src="/logo.png" alt="Paleteria Logo" width={72} height={72} />
           <ul className="flex gap-x-6 text-xl">
             <li><Link className="hover-link" href="#ice-cream">{menuText[language][0]}</Link></li>
             <li><Link className="hover-link" href="#popsicles">{menuText[language][1]}</Link></li>

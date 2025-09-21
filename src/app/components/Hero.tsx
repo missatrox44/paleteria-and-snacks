@@ -24,13 +24,13 @@ const Hero = () => {
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center">
+      <div className="absolute inset-x-0 bottom-0 transform translate-y-1/2 flex justify-center ">
         <Image
           src="/logo.png"
           alt="Logo"
           width={logoSize}
           height={logoSize}
-          className=""
+          className=" bg-black rounded-[50%]"
         />
       </div>
     </div>
