@@ -326,7 +326,7 @@ export const snacksData = [
       en: "Mini Pancakes",
       es: "Mini Panqueques",
     },
- "image": "/temp/snacks/minipancakes.png",
+    "image": "/temp/snacks/minipancakes.png",
     alt: {
       en: "Mini pancakes",
       es: "Mini panqueques",
@@ -418,7 +418,7 @@ export const snacksData = [
       en: "Dorinachos",
       es: "Dorinachos",
     },
-    image:  "/temp/snacks/dorinachos.png",
+    image: "/temp/snacks/dorinachos.png",
     alt: {
       en: "Dorinachos",
       es: "Dorinachos",
@@ -466,7 +466,7 @@ export const snacksData = [
       en: "Maruchan",
       es: "Maruchan",
     },
-    image:"/temp/snacks/maruchan.png",
+    image: "/temp/snacks/maruchan.png",
     alt: {
       en: "Maruchan",
       es: "Maruchan",
@@ -556,7 +556,7 @@ export const snacksData = [
       en: "Banana Split",
       es: "Banana Split",
     },
-    image:  "/temp/snacks/bananasplit.png",
+    image: "/temp/snacks/bananasplit.png",
     alt: {
       en: "Banana split",
       es: "Banana split",
@@ -683,7 +683,7 @@ export const drinksData = [
       en: "Clamato",
       es: "Clamato",
     },
-    image:"/temp/drinks/clamato.png",
+    image: "/temp/drinks/clamato.png",
     alt: {
       en: "Clamato",
       es: "Clamato",
